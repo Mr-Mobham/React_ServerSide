@@ -1,0 +1,170 @@
+.Login{
+  @extend .dir;
+  margin-top: 1px;
+  .nav-top{
+    width: $width;
+    background: #832b7c;
+    @media#{$mobile-big}{
+      text-align: center;
+    }
+    .bg{
+      width: 299px;
+      @media#{$tablet }{
+        width: $width;
+        padding-top: 15px;
+      }
+      .club{
+        width: 299px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 27px;
+        background: #d0ad67;
+        @media#{$mobile-big}{
+          width: 90%;
+        }
+        @media#{$mobile }{
+          width: $width;
+        }
+        .title{
+          @include Bold(20);
+          color: $white;
+          margin-right: 20px;
+          cursor: default;
+          margin-top: 7px;
+        }
+        .shape {
+          width: 41px;
+          height: 41px;
+        }
+      }
+  }
+
+    .menu{
+      padding-right: 26px;
+      cursor: default;
+      position: relative;
+      @media#{$tablet}{
+        padding-right: 0px;
+      }
+      @media#{$mobile-big}{
+        margin-top: 10px;
+        width: 90%;
+      }
+      @media#{$mobile }{
+        width: $width;
+      }
+      ul{
+        li{
+          margin-left:35px;
+          display: inline-block;
+          padding-right: 7px;
+          padding-left: 7px;
+          text-align: center;
+          transition: all 110ms ease-in-out;
+          position: relative;
+          &:hover{
+            background: #b64eae;
+            transition: all 110ms ease-in-out;
+            @media#{$mobile-big}{
+              width: $width;
+            }
+          }
+          @media#{$mobile-big}{
+            width: $width;
+          }
+          .message{
+            width: 21px;
+            height: 21px;
+            background: #fff59b;
+            text-align: center;
+            @include Bold(14);
+            color: #832b7c;
+            position: absolute;
+            top:4px;
+            left: -10px;
+            border-radius: 2px;
+            border-bottom-right-radius: 5px;
+            @media#{$mobile-big}{
+              right: 56%;
+              left: auto;
+            }
+            @media screen and ("max-width:390px"){
+              right: 58%;
+            }
+          }
+          &:last-child{
+            margin-left: 0px;
+          }
+          @media#{$tablet}{
+            margin-top: 10px;
+            margin-left: 15px;
+          }
+        }
+        a{
+          @include Web(18);
+          color: $white;
+          display: block;
+          width: $width;
+          padding-top: 21px;
+          padding-bottom: 21px;
+          transition: all 110ms ease-in-out;
+          @media#{$mobile-big}{
+            text-align: center;
+            background: #b64eae;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            &:hover{
+              color: #000;
+              transition: all 110ms ease-in-out;
+            }
+          }
+        }
+      }
+  }
+  .user_avatar{
+    width: 273px;
+    margin-top: 2.5px;
+    @media#{$mobile-big}{
+      float: none;
+      margin: auto;
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .user_admin{
+      @include Web(18);
+      color: $white;
+      margin-top: 21px;
+      cursor: default;
+      width: 200px;
+      @media#{$tablet }{
+        margin-bottom: 15px;
+        margin-top: 30px;
+        float: left;
+      }
+      @media#{$mobile-big}{
+        margin-top: 22px;
+        text-align: right;
+        margin-right: 2px;
+      }
+    }
+    .min_avatar{
+      width: 48px;
+      height: 48px;
+      border-radius: 50px;
+      background: $white;
+      margin-right: 18px;
+      margin-top: 9px;
+      position: relative;
+      text-align: center;
+      .avatar{
+        width: $width;
+        height: $height;
+        border-radius: 25px;
+      }
+    }
+  }
+
+  }
+
+}

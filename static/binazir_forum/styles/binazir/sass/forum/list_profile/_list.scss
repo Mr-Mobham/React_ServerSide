@@ -1,0 +1,127 @@
+#list-post_send.Last--subject{
+  .titles{
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+   .items{
+     display: none;
+     &:nth-child(2){
+       display: block;
+     }
+  }
+  .list-post_send{
+    padding-right: 8px;
+    padding-left: 8px;
+    ul{
+      li{
+        padding-right: 17px;
+        padding-left: 17px;
+        transition: all 95ms ease-in-out;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        display: inline-block;
+        @media#{$mobile-big}{
+          width: $width;
+        }
+      }
+      a{
+        @include Bold(18);
+        color: #adadad;
+        width: $width;
+        transition: all 13ms ease;
+        padding-top: 11px;
+        padding-bottom: 11px;
+      }
+      .selected{
+        background: $other;
+        transition: all 13ms ease;
+        a{
+          color: $white;
+          transition: all 13ms ease;
+        }
+
+      }
+    }
+  }
+  .item{
+    &:last-of-type{
+      margin-bottom: 22px;
+    }
+  }
+  .display_block{
+    display: block !important;
+  }
+  .post-create{
+    width: $width;
+    border:solid 1px #dadada;
+    border-radius: 1px;
+    margin-bottom: 17px;
+    transition: all 85ms ease-in-out;
+    padding: 2px 3px 2px 3px;
+    &:hover{
+      background: #faf6eb;
+      transition: all 85ms ease-in-out;
+      border-color: $yellow;
+      .col{
+        background: #e4d4b2;
+        transition: all 85ms ease-in-out;
+      }
+    }
+    .subject{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 500px;
+      @media screen and ("max-width:1000px"){
+        width: 700px;
+      }
+      .Square{
+        width: 9px;
+        height: 9px;
+        background: #d0af68;
+        margin-top: 10px;
+      }
+      .title{
+        @include Bold(18);
+        color: $other;
+        margin-right: 8px;
+      }
+    }
+    .col{
+      background: #e8e8e8;
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 8px;
+      padding-left: 8px;
+      transition: all 85ms ease-in-out;
+      width: 320px;
+      @media screen and ("max-width:1000px"){
+        float: left;
+      }
+      @media#{$mobile}{
+        width: $width;
+      }
+      .file_icon {
+        width: 19px;
+        height: 19px;
+        margin-top: 3.5px;
+      }
+      .last-post-user {
+        @include Web(14);
+        color: #2e2e2e;
+        margin-right: 8px;
+        margin-top: 1px;
+        cursor: default;
+      }
+      .user_title{
+        color: #832b7c;
+        margin-right: 6px;
+        margin-top: 1px;
+        cursor: default;
+        @include Bold(14);
+      }
+    }
+  }
+}

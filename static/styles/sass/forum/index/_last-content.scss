@@ -1,0 +1,255 @@
+  .Last--subject.last-content{
+    width: $width;
+    padding-top: 27px;
+    @extend .dir;
+      .min-subject{
+        @media#{$mobile}{
+          float: right;
+          margin-right: 0px;
+          width: $width;
+        }
+        .border-left{
+          border-left: solid 1px $other;
+          margin-left: 10px;
+          padding-left: 15px;
+          height: 32px;
+          display: block;
+          position: relative;
+          top: -5px;
+          @media#{$mobile}{
+            display: none;
+          }
+        }
+        .all_subject{
+          position: relative;
+          top: 0px;
+          left: 0px;
+          @media#{$Medium }{
+            margin-top: 12px;
+            padding-right: 14px;
+          }
+          @media#{$mobile}{
+            width: $width;
+          }
+          &:last-of-type{
+            margin-right: 7.5px;
+            @media#{$mobile}{
+              margin-right: 0px;
+            }
+            .border-left{
+              display: none;
+            }
+          }
+        }
+    }
+
+    .items{
+      width: $width;
+      padding-top: 27px;
+      .item{
+        width: $width;
+        margin-bottom: 22px;
+        &:last-of-type{
+          margin-bottom: 0px;
+        }
+        .user{
+          width: 94px;
+          border-radius: 25px;
+          margin-right: 15px;
+          @media#{$tablet}{
+            margin-bottom: 8px;
+          }
+          .avatar{
+            width: 94px;
+            height: 94px;
+            background: #fff;
+            border-radius: 50px;
+            border: solid 1px #832b7c;
+            position: relative;
+            .avatar_user{
+              width: 74px;
+              height: 74px;
+              position: absolute;
+              bottom: 0px;
+              right: 0px;
+              left: 0px;
+              margin: auto;
+              border-radius: 30px;
+            }
+            .user_default{
+              width: $width;
+              height: $height;
+              margin: auto;
+              border-radius: 50px;
+              fill:#832b7c;
+            }
+          }
+            .info{
+              text-align: center;
+              .title{
+                @include Bold(16);
+                color: #832b7c;
+                display: block;
+                margin-top: 6px;
+              }
+              .one{
+                @include Bold(12);
+                color: #bc9038;
+                display: block;
+                margin-top: 4px;
+                cursor: default;
+              }
+          }
+        }
+        .post_item{
+          padding-right:3px;
+          padding-left: 3px;
+          width: 1001px;
+          border: solid 1px #e8e8e8;
+          border-radius: 1px;
+          padding-top: 3px;
+          position: relative;
+          @media#{$tablet}{
+            width: $width;
+          }
+          @media#{$mobile}{
+            box-shadow: 2px 1px 5px #ccc;
+          }
+          .post{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background:#e9e9e9;
+            padding-right: 14px;
+            padding-left: 18px;
+            .nav-top{
+              width: $width;
+              .title{
+                @include Bold(18);
+                color: $other;
+                width: 700px;
+                cursor: default;
+                @media#{$tablet }{
+                  width: 65%;
+                }
+                @media screen and ("max-width:700px"){
+                  width: $width;
+                }
+              }
+              .date_time{
+                @media#{$mobile}{
+                  float: right;
+                }
+                .like{
+                  margin-top: 5px;
+                  margin-left: 25px;
+                  @media#{$mobile}{
+                    margin-left: 0px;
+                    width: $width;
+                  }
+                  .Square{
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 3.5px;
+                  }
+                  .Number{
+                    color: $other;
+                    @include Medium(14);
+                    margin-right: 6px;
+                    cursor: default;
+
+                  }
+                }
+                .dates{
+                  margin-top: 5px;
+                  @media#{$mobile}{
+                    float: right;
+                  }
+                  .icon_calender{
+                    width: 15px;
+                    height: 15px;
+                    margin-top: 3px;
+                  }
+                  .Number{
+                    color: $other;
+                    @include Medium(14);
+                    margin-right: 6px;
+                    cursor: default;
+                  }
+                }
+              }
+            }
+          }
+          .descriptions{
+            width: $width;
+            position: relative;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            .description{
+              width: 943px;
+              margin-right: 46px;
+              @include Web(18);
+              color: #4c4c4c;
+              cursor: default;
+              @media#{$tablet}{
+                width: $width;
+                padding-right: 46px;
+                margin-right: 0px;
+                padding-left: 46px;
+              }
+              @media#{$mobile-big}{
+                padding-right:25px;
+                padding-left: 25px;
+              }
+              @media#{$mobile}{
+                padding-right: 15px;
+                padding-left: 15px;
+                font-size: 16px;
+              }
+            }
+            .quotation{
+              width: 46px;
+              height: 46px;
+              position: absolute;
+              top: 0px;
+              right: 3px;
+              @media#{$mobile-big}{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    // Mood Change user ///
+      .Adviser--border{
+        border-color: #44832b !important;
+        fill:#44832b !important;
+      }
+      .Adviser--color{
+        color: #44832b !important;
+      }
+      .user--border{
+        border-color: $other !important;
+        fill:$other !important;
+      }
+      .user--color{
+        color: $other !important;
+      }
+      .admin{
+        border-color: #e34756 !important;
+        fill:#e34756 !important;
+      }
+      .admin--color{
+        color: #e34756 !important;
+      }
+      .backlight{
+        position: absolute;
+        top:49px;
+        right: -34px;
+        width: 35px;
+        @media#{$tablet}{
+          display: none;
+        }
+      }
+    }
+
+  }

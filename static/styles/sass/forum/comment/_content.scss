@@ -1,0 +1,241 @@
+#comment{
+  width: $width;
+  margin-top: 20px;
+  @extend .dir;
+  .Last--subject.last-content{
+    .items{
+      margin-bottom: 13px;
+      &:nth-child(3n){
+        padding-top: 0px;
+      }
+      .Negative{
+        fill:#4ec300;
+      }
+      .item{
+        .post_item{
+          @media#{$mobile}{
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-bottom: 0px !important;
+          }
+          .items{
+            margin-bottom: 0px;
+          }
+          .post_item{
+            width: 836px;
+            margin-left: 15px;
+            margin-bottom: 14px;
+            @media#{$tablet}{
+              width: $width;
+              margin-left: 0px;
+            }
+            .post{
+              margin-top: 4px;
+              margin-right: 1px;
+              margin-left: 1px;
+              .like{
+                &:nth-child(3){
+                  display: none;
+                }
+                &:nth-child(2){
+                  margin-left: 5px;
+                }
+
+              }
+            }
+            .descriptions{
+              .description{
+                width: auto;
+                padding-left: 15px;
+                @media#{$mobile-big}{
+                  padding-right: 20px;
+                  width: $width;
+                }
+                @media#{$mobile}{
+                  margin-bottom: 0px;
+                }
+              }
+            }
+            .min_attachment{
+              display: none;
+            }
+
+          }
+          .user{
+            width: 84px;
+            .avatar{
+              width: 84px;
+              height: 84px;
+            }
+            .user_default{
+              width: 64px;
+              height: 64px;
+            }
+            .title{
+              font-size: 14px;
+            }
+          }
+          .dates{
+            @media#{$mobile}{
+              width: $width;
+            }
+          }
+        }
+
+      }
+      .post_item {
+        margin-bottom: 40px;
+        &:nth-child(2n){
+          padding-top: 0px;
+          margin-bottom: 0px;
+        }
+        .descriptions .description{
+          &:nth-child(2){
+            margin-top: 10px;
+            margin-bottom: 15px;
+          }
+        }
+        .like{
+          background: transparent;
+          border: none;
+          margin-left: 10px;
+          @media#{$mobile }{
+            width: auto;
+          }
+          &:nth-child(2){
+            margin-top: 4px;
+            cursor: pointer;
+            margin-left: 25px;
+          }
+          &:nth-child(1){
+            margin-top: 4px;
+            margin-left: -5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .post{
+        .title{
+          width: 400px;
+        }
+        .Negative{
+          width: 24px;
+          height: 24px;
+        }
+        .Number {
+          &:nth-child(1){
+            margin-left: 7px;
+            margin-top: 1.5px;
+          }
+        }
+        .dates{
+          background: transparent;
+          border: none;
+        }
+      }
+    }
+    .min_attachment{
+      padding-right: 9px;
+      padding-left: 9px;
+      border-top: solid 4px #f0f0f0;
+      border-bottom: solid 4px #f0f0f0;
+      width: $width;
+      padding-bottom: 0px;
+      padding-top: 5px;
+      .attachment{
+        margin-left: 40px;
+        margin-top: 4px;
+        .link{
+          display: inline-block;
+          .icon_attach{
+            width: 28px;
+            height: 28px;
+          }
+          .title{
+            @include Web(18);
+            color: #7d7d7d;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .min_button{
+      @media#{$mobile }{
+        width: $width;
+      }
+      .answer{
+        width: 84px;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        background: #d0ad67;
+        border: none;
+        color: $white;
+        text-align: center;
+        @include Medium(14);
+        transition:  all 95ms ease-in-out;
+        margin-bottom: 6px;
+        @media#{$mobile }{
+          width: 30%;
+        }
+        @media#{$mobile-min}{
+          width: 40%;
+        }
+        &:hover{
+          transition: all 95ms ease-in-out;
+          background:$other;
+        }
+      }
+    }
+  }
+  .pagnation{
+    width: $width;
+    margin-bottom: 12px;
+    .buttns{
+      text-align: center;
+      margin:auto;
+      cursor: default;
+      width: 500px;
+      @media#{$mobile-big}{
+        width: $width;
+      }
+      .button{
+        padding-right: 15px;
+        padding-left: 15px;
+        @include Bold(14);
+        color: #979797;
+        text-align: center;
+        border: solid 1px #d5d5d5;
+        background: transparent;
+        border-radius: 1px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 1px;
+        transition: all 110ms ease;
+        cursor: pointer;
+        @media#{$mobile }{
+          width: $width;
+          margin-bottom: 5px;
+        }
+        &:hover{
+          background: #ffe2fd;
+          transition: all 110ms ease;
+          color: #832b7c;
+        }
+      }
+      .number{
+        padding-right: 8px;
+        padding-left: 8px;
+        cursor: pointer;
+      }
+      .Next{
+        @media#{$mobile }{
+          float: right;
+        }
+      }
+    }
+  }
+  .send_subject{
+      height:400px;
+      display: none;
+  }
+}

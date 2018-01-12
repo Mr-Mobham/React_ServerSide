@@ -1,0 +1,99 @@
+ .notification{
+     width: $width;
+     @extend .dir;
+     .items{
+       width: $width;
+       padding-top:24px;
+       padding-bottom: 0px;
+       .item{
+         width: $width;
+         padding: 9px 15px 9px 15px;
+         border: solid 1px #f08383;
+         position: relative;
+         cursor: default;
+         margin-bottom: 9px;
+         &:last-of-type{
+           margin-bottom: 0px;
+         }
+         .Content{
+           width: 1000px;
+           @media#{$tablet  }{
+              width:90%;
+           }
+           .title{
+             @include Bold(14);
+             margin-right: 26px;
+             margin-top: 4px;
+             color: #ef7e7e;
+             z-index: 12;
+             width: $width;
+             @media#{$tablet  }{
+                margin-right: 0px;
+             }
+           }
+           .notification-icon{
+             width: 20px;
+             height: 20px;
+             fill:#e06464;
+             position: absolute;
+             right: 13px;
+             top: 14px;
+             z-index: 12;
+             @media#{$tablet  }{
+                display: none;
+             }
+           }
+       }
+         .alert-danger{
+           position: absolute;
+           top: 0px;
+           right: 0px;
+           background: url("../img/alert-danger.png");
+           width: $width;
+           height: $height;
+           z-index: -11;
+         }
+         .icon_close_danger{
+           fill:#e06464;
+           width: 21px;
+           height: 21px;
+         }
+           .link{
+             display: inline-block;
+             margin-top: 6px;
+           .icno-close{
+             width: 100px;
+             margin-top: 4px;
+           }
+         }
+       }
+       .border-warning{
+         border-color: #eda927 !important;
+       }
+       .border-success{
+         border-color: #56c238 !important;
+       }
+       .border-danger{
+         border-color: #ef7e7e !important
+       }
+       .border-info{
+         border-color:#39999f !important;
+       }
+       .success{
+         color: #56c238 !important;
+         fill:#56c238 !important;
+       }
+       .danger{
+         color: #ef7e7e !important;
+         fill:#ef7e7e !important;
+       }
+       .warning{
+         fill:#f4d145 !important;
+         color: #eebe2a !important;
+       }
+       .info{
+         fill:#39999f !important;
+         color: #39999f !important;
+       }
+     }
+  }

@@ -1,0 +1,86 @@
+  .newletter{
+    width: $width;
+    background:#b64eae;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @extend .dir;
+    @media screen and ("max-width:705px"){
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    @media#{$mobile-min}{
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    .news{
+      margin-top: 16px;
+      @media#{$tablet }{
+        width: $width;
+        margin-bottom: 5px;
+      }
+      .black-envelope-email-symbol{
+        width: 42px;
+        height: 42px;
+        @media screen and ("max-width:705px"){
+          display: none;
+        }
+      }
+      .title{
+        @include Bold(20);
+        color: $white;
+        margin-right: 20px;
+        margin-top: 4px;
+        @media#{$tablet }{
+          width: 90%;
+        }
+        @media#{$mobile-min}{
+          font-size: 18px;
+        }
+        @media screen and ("max-width:705px"){
+          width: $width;
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .Number{
+      width: 467px;
+      position: relative;
+      @media screen and ("max-width:705px"){
+        width: $width;
+      }
+      .input_Number{
+        width: $width;
+        @include Bold(17);
+        color: #2e2e2e;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border: none;
+        @media#{$mobile}{
+          font-size: 15px;
+          padding-top: 22px;
+          padding-bottom: 25px;
+          font-size: 13px;
+        }
+      }
+      .submit{
+        @include Bold(14);
+        color: $white;
+        text-align: center;
+        background: #d0ad67;
+        position: absolute;
+        top: 3.5px;
+        left: 5px;
+        border: none;
+        height: 63px;
+        padding-left: 30px;
+        padding-right: 30px;
+        @media#{$mobile}{
+          font-size: 13px;
+        }
+      }
+    }
+
+  }

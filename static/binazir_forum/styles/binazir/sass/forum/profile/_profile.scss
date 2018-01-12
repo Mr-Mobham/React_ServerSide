@@ -1,0 +1,69 @@
+  #profile.profile{
+    width: $width;
+    margin-top: 13px;
+    .content{
+      width: $width;
+      .subject{
+        width: $width;
+        border: solid 1px #ccc;
+        padding: 2px;
+        .user_prfile{
+          @media#{$mobile-big }{
+            width: $width;
+          }
+          .line{
+            height: 52px;
+            border-left: solid 8px $other;
+          }
+          .text{
+            @include Bold(23);
+            color: $other;
+            margin-top: 7px;
+            margin-right: 21px;
+            @media#{$mobile-big }{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .buttons{
+        @media screen and ("max-width:500px"){
+          width: $width;
+        }
+        .button{
+          width: 154px;
+          padding-top: 10px;
+          padding-bottom:10px;
+          background: #d0ad67;
+          text-align: center;
+          @include Bold(18);
+          color: $white;
+          border: none;
+          margin-left: 5px;
+          transition: all 110ms ease-in-out;
+          @media#{$mobile-big }{
+            font-size: 16px;
+          }
+          @media screen and ("max-width:500px"){
+            width: 40%;
+            float: left;
+            margin-right: 2%;
+          }
+          &:last-of-type{
+            margin-left: 0px;
+            @media screen and ("max-width:500px"){
+            margin-right: 0%;
+            }
+          }
+
+          &:hover{
+              background: $other;
+              transition: all 110ms ease-in-out;
+          }
+        }
+        .tusi{
+          background: #969696;
+        }
+      }
+    }
+  }

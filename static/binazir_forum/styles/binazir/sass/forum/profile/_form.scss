@@ -1,0 +1,238 @@
+  #profile.profile{
+    @extend .dir;
+    .form{
+      width: $width;
+      padding-top: 53px;
+      .conversation{
+        width: 336px;
+        border-radius: 1px;
+        @media#{$tablet}{
+          width: 36%;
+        }
+        @media screen and ("max-width:770px"){
+          width: 45%;
+        }
+        @media#{$mobile-big}{
+          width:99%;
+        }
+        .items{
+          width: $width;
+          border-radius: 1px;
+          border: solid 1px #ccc;
+          padding: 5px;
+          margin-bottom: 30px;
+          @media#{$Medium }{
+            margin-top: 25px;
+          }
+          .item{
+            width: $width;
+            padding-top: 8px;
+            padding-bottom: 3px;
+            background: #e7e7e7;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 1px;
+            transition: all 110ms ease-in-out;
+            &:hover{
+              background: #c18f2a;
+              transition: all 110ms ease-in-out;
+              .comment_me{
+                color: #2e2e2e;
+                transition: all 110ms ease-in-out;
+              }
+              .number{
+                color: #2e2e2e;
+                transition: all 110ms ease-in-out;
+              }
+            }
+            .message-icon{
+              width: 25px;
+              height: 25px;
+              fill:$other;
+              margin-top: 3px;
+            }
+            .comment_me{
+              @include Bold(18);
+              color: $other;
+              margin-right: 8px;
+              cursor: default;
+              transition: all 110ms ease-in-out;
+            }
+            .number{
+              @include Bold(18);
+              color: #c18f2a;
+              margin-right: 5px;
+              transition: all 110ms ease-in-out;
+            }
+            .question{
+              width: 25px;
+              height: 25px;
+              fill:$other;
+              margin-top: 3px;
+              transform: rotate(180deg);
+            }
+            .private-message{
+              width: 25px;
+              height: 25px;
+              fill:$other;
+              margin-top: 0px;
+            }
+          }
+          .pic{
+            width: $width;
+            padding-top: 30px;
+            padding-bottom: 130px;
+            text-align: center;
+            .readius{
+              width: 268px;
+              height: 268px;
+              border-radius: 200px;
+              border: solid 1px #e4e4e4;
+              margin: auto;
+              position: relative;
+              @media#{$Medium }{
+                width: $width;
+              }
+              @media#{$mobile-big}{
+                width: 268px;
+              }
+            }
+            .text_render{
+              width: $width;
+              @include Bold(18);
+              margin: 110px auto;
+              display: block;
+              color: #acacac;
+              cursor: default;
+            }
+            .file_upload{
+              position: absolute;
+              top:0px;
+              right: 0px;
+              left: 0px;
+              height: $height;
+              width: $width;
+              opacity: 0;
+              z-index: 11;
+            }
+            #img_uploaded{
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              border-radius: 200px;
+              width: $width;
+              height: 268px;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .inputs{
+      width: 800px;
+      @media#{$tablet}{
+        width: 61%;
+      }
+      @media#{$Medium }{
+        width: $width;
+      }
+      .min_input{
+        width: 365px;
+        margin-left: 40px;
+        @media#{$tablet}{
+          width: 46%;
+          margin-left: 3%;
+        }
+        @media#{$Medium }{
+          width: 48.20%;
+        }
+        @media#{$mobile}{
+          width: 99.8%;
+        }
+        &:nth-child(2n){
+          margin-left: 0px;
+        }
+        .input{
+          width: $width;
+          @include Bold(18);
+          color: $other;
+          padding-right: 9px;
+          padding-left: 9px;
+          margin-bottom: 20px;
+          border: solid 1px #dadada;
+          padding-top:13px;
+          padding-bottom:13px;
+          transition: all 90ms ease-in-out;
+          border-radius: 1px;
+          @media#{$mobile-big}{
+            font-size: 16px;
+          }
+          &:focus{
+            border-color: #d0ad67;
+            transition: all 90ms ease-in-out;
+          }
+          &::-webkit-input-placeholder {
+           color: $tosi;
+          }
+
+          &:-moz-placeholder { /* Firefox 18- */
+             color: $tosi;
+          }
+
+          &::-moz-placeholder {  /* Firefox 19+ */
+             color: $tosi;
+          }
+
+          &:-ms-input-placeholder {
+             color: $tosi;
+          }
+        }
+      }
+      .empty{
+        border-color: red !important;
+        transition: all 90ms ease-in-out;
+      }
+      .textarea{
+        width: 770px;
+        @include Bold(18);
+        color: $other;
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-top: 12px;
+        border: solid 1px #dadada;
+        transition: all 90ms ease-in-out;
+        border-radius: 1px;
+        height: 332px;
+        @media#{$tablet}{
+          width:94.90%;
+        }
+        @media#{$Medium }{
+          width: 99%;
+        }
+        @media#{$mobile-big}{
+          font-size: 16px;
+          margin-bottom:15px;
+        }
+        &:focus{
+          border-color: #d0ad67;
+          transition: all 90ms ease-in-out;
+        }
+        &::-webkit-input-placeholder {
+         color: $tosi;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+           color: $tosi;
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+           color: $tosi;
+        }
+
+        &:-ms-input-placeholder {
+           color: $tosi;
+        }
+      }
+    }
+
+  }

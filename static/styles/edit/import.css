@@ -1,0 +1,54 @@
+.index.subjects .items .item .group_subject li{
+  width: auto;
+  margin-left: 12px;
+  position: relative;
+}
+.index.subjects .items .item .group_subject li::after{
+  position: absolute;
+  left: -6px;
+}
+.title_subject{
+  margin-bottom:20px;
+}
+.title_subject:last-of-type{
+  margin-bottom: 0px;
+}
+#forum .forum-Class-- .Right_Width .user{
+  height: 100%;
+}
+.forum-Class-- .Right_Width .main-carousel_right .carousel-cell{
+  height: 200px;
+}
+#forum .forum-Class-- .title{
+  width: auto;
+}
+.forum-Class-- .Right_Width .main-carousel_right .user .title{
+  margin-right: auto;
+}
+#forum .forum-Class-- .Right_Width .user{
+  text-align: center;
+}
+.Last--subject.last-content .items .item:last-of-type{
+  margin-bottom: 22px
+}
+.Last--subject.last-content .items .item .post_item .descriptions .description{
+  word-wrap: break-word;
+}
+.coursor{
+  cursor: pointer;
+}
+.editor--textarea{
+  width: 100%;
+  font: 18px "IRANSansWeb";
+  color: #4c4c4c;
+  padding-right: 8px;
+  padding-top:8px;
+  height: 100px;
+}
+.datepiker{
+  display: none;
+}
+#comment .Last--subject.last-content .items .item .post_item .user .avatar{
+  text-align: center;
+  padding-top: 8px;
+}

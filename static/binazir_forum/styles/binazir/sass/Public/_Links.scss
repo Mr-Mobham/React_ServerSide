@@ -1,0 +1,132 @@
+.Links{
+  width: $width;
+  height: 409px;
+  background-image: url("../img/pattern.png");
+  @extend .dir;
+  @media#{$Medium }{
+    height: auto;
+  }
+  @media#{$mobile-min }{
+    background: none;
+  }
+  .Link{
+    width: 270px;
+    padding-top: 50px;
+    cursor: default;
+    @media#{$Medium }{
+      padding-top: 40px;
+    }
+    @media#{$mobile-big}{
+      width: $width;
+    }
+    .title{
+      @include Bold(20);
+      color: $other;
+    }
+    .link_symbool{
+      width: 23px;
+      height: 23px;
+      margin-left: 4px;
+    }
+    ul{
+      width: $width;
+      padding-top: 8px;
+      li{
+        width: $width;
+        display: block;
+        margin-bottom: 13px;
+        transition: all 110ms ease;
+      }
+      a{
+        width: $width;
+        @include Bold(16);
+        color: #6b6b6b;
+        transition: all 110ms ease;
+        &:hover{
+          color: #b64eae;
+          transition: all 110ms ease;
+          margin-right: 10px;
+        }
+      }
+    }
+    .icon_profile{
+      width: 23px;
+      height: 23px;
+      margin-top: 5px;
+      margin-left: 0px;
+    }
+    .map{
+      width: 24px;
+      height: 24px;
+      margin-left: 4px;
+    }
+
+  }
+  .social-network{
+    padding-top: 55px;
+    cursor: default;
+    @media#{$tablet }{
+      margin-bottom: 3px;
+      padding-top: 30px;
+    }
+    .title{
+      @include Bold(20);
+      color: $other;
+      margin-top: -5px;
+      margin-right: 6px;
+    }
+    .shape{
+      width: 23px;
+      height: 23px;
+    }
+    .socials{
+      width: $width;
+      margin-top: 20px;
+      .bg{
+        width: 28px;
+        height: 24px;
+        background:#999898;
+        display: block;
+        text-align: center;
+        margin-left: 8px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: all 120ms ease-in;
+        &:hover{
+          background: #59a7ff;
+          transition: all 120ms ease-in;
+        }
+        a{
+          display: block;
+        }
+        .linkdin{
+          width: 15px;
+          height: 15px;
+          margin-left: 1px;
+        }
+        .icon{
+          width: 15px;
+          height: 15px;
+          margin-left: 0px;
+          margin-top: 2px;
+        }
+      }
+      .bg-instagram{
+        width: 25px;
+        height: 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        .instagram{
+          width: 21px;
+          height: 21px;
+          margin-left: 0px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}

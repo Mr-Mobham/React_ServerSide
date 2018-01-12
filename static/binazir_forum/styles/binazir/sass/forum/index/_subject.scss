@@ -1,0 +1,242 @@
+    .index.subjects{
+      width: $width;
+      padding-top: 15px;
+      @extend .dir;
+      .items{
+        width: $width;
+        margin-top: 20px;
+        .item{
+          width: $width;
+          border: solid 2px #eaeaea;
+          margin-bottom: 17px;
+          border-radius: 1px;
+          position: relative;
+          transition: all 110ms ease;
+          @media#{$mobile }{
+            box-shadow: 2px 1px 5px #ccc;
+          }
+          &:last-of-type{
+            margin-bottom: 0px;
+          }
+          &:hover{
+            background: #fbf6ec;
+            transition: all 110ms ease;
+            border-color: #d5b576;
+            .col{
+              background: #e5d4b2;
+              transition: all 110ms ease;
+            }
+            .date-color{
+                background: #e8dcc5;
+                transition: all 110ms ease;
+            }
+            .group_subject li .line{
+              border-color: #fbf6ec;
+            }
+          }
+          .Subject{
+            width: 830px;
+            @media#{$tablet}{
+              width: 67%;
+            }
+            @media#{$Medium}{
+              width: $width;
+            }
+            .title{
+              @include Bold(18);
+              color: #832b7c;
+              position: absolute;
+              right: 32px;
+              top: 6px;
+              cursor: default;
+              @media#{$tablet}{
+                position: relative;
+                right: 0px;
+                top: 0px;
+                float: right;
+                padding-right: 15px;
+                width: $width;
+              }
+              @media#{$Medium}{
+                margin-top: 7px;
+              }
+            }
+            .box{
+              width: 9px;
+              height: 9px;
+              background: #d0ad67;
+              margin-right: 15px;
+              margin-top: 17px;
+              @media#{$tablet}{
+                display: none;
+              }
+            }
+          }
+          .group_subject{
+            margin-top: 44px;
+            margin-right: -6px;
+            @media#{$tablet}{
+              margin-right: 0px;
+              padding-right: 14px;
+              margin-top: 6px;
+              padding-bottom: 10px;
+            }
+            li{
+              margin-left: 3px;
+              transition: all 110ms ease;
+              display: inline-block;
+              width: 103px;
+              &::after{
+                content: "";
+                border-left: solid 1px $other;
+                height: 15px;
+                float: left;
+                margin-top: -22px;
+              }
+              &:last-child{
+                &::after{
+                  display: none;
+                }
+              }
+              &:hover{
+                  .line{
+                    border-bottom: solid 1px $other;
+                    transition: all 110ms ease;
+                  }
+                  a{
+                    color: $other;
+                    transition: all 110ms ease;
+                  }
+              }
+              .line{
+                width: $width;
+                border-bottom: solid 1px $white;
+                transition: all 110ms ease;
+                display: block;
+              }
+            }
+            a{
+                @include Web(16);
+                color: $yellow;
+                display: block;
+                transition: all 110ms ease;
+              }
+          }
+        }
+      }
+      .info{
+        width: 321px;
+        height: $height;
+        margin-top: 3px;
+        margin-bottom:3px;
+        margin-left: 3px;
+        transition: all 110ms ease;
+        @media#{$tablet}{
+          width: 32%;
+        }
+        @media#{$Medium}{
+          width: $width;
+        }
+        @media#{$mobile }{
+          padding-right: 5px;
+        }
+        .col{
+          width: $width;
+          background: #e8e8e8;
+          height: $height;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          padding-right: 8px;
+          padding-left:8px;
+          transition: all 110ms ease;
+          @media#{$Medium}{
+            padding-right: 13px;
+            padding-left: 13px;
+          }
+          .last-post-user {
+            @include Web(14);
+            color: #4c4c4c;
+            margin-right: 8px;
+            margin-top: 1px;
+            cursor: default;
+          }
+          .user_title{
+            @include Bold(14);
+            color: #832b7c;
+            margin-right: 6px;
+            margin-top: 1px;
+            cursor: default;
+          }
+          .file_icon{
+            width: 19px;
+            height: 19px;
+            margin-top: 3.5px;
+          }
+        }
+        .date-color{
+          background:#ececec;
+          transition: all 110ms ease;
+        }
+      }
+    }
+    .subject{
+      width: $width;
+      .titles{
+        width: $width;
+        border: solid 1px #d5d5d5;
+        padding-left: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        position: relative;
+        .border{
+          border-left: solid 8px #832b7c;
+          height: 52px;
+          @media#{$Medium }{
+            display: none;
+          }
+        }
+        .text{
+          @include Bold(20);
+          color: #832b7c;
+          margin-right: 28px;
+          margin-top: 10px;
+          @media#{$Medium }{
+            width: 80%;
+            margin-right: 12px;
+          }
+          @media#{$mobile-big}{
+            width: 65%;
+          }
+          @media screen and ("max-width:400px"){
+            width: $width;
+          }
+        }
+      }
+      .min-subject {
+        @media#{$Medium }{
+          margin-bottom: 5px;
+        }
+        .all_subject{
+          @include Bold(14);
+          color: #832b7c;
+          margin-top: 16px;
+          @media#{$Medium}{
+            position: absolute;
+            top: 16px;
+            margin-top:0px;
+            left: 14px;
+          }
+          @media screen and ("max-width:400px"){
+            position: inherit;
+            top: 0px;
+            left: 0px;
+            margin-top: 16px;
+          }
+          .number{
+            @include Bold(14);
+            color: #ad883d;
+            word-wrap: break-word;
+          }
+        }
+      }
+  }

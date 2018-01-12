@@ -1,0 +1,1823 @@
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url("../fonts/IRANSansWeb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IRANSansWeb_Bold';
+  src: url("../fonts/IRANSansWeb_Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IRANSansWeb_Light';
+  src: url("../fonts/IRANSansWeb_Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IRANSansWeb_Medium';
+  src: url("../fonts/IRANSansWeb_Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'IRANSansWeb_UltraLight';
+  src: url("../fonts/IRANSansWeb_UltraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  margin: 0px;
+  padding: 0px; }
+
+ul, li, h1, h2, h3, h4, h5, figure {
+  margin: 0px;
+  padding: 0px; }
+
+.wrapper {
+  width: 1170px;
+  margin: auto; }
+  @media (max-width: 1200px) {
+    .wrapper {
+      width: 90%; } }
+
+.dir, header, .newletter, .Links, footer, footer .footer, .forum-Class--, #forum, .Login, .notification, .index.subjects, .Last--subject.last-content, #profile.profile, #comment {
+  direction: rtl; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.align-center {
+  text-align: center; }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  outline: none; }
+
+.clear-fix {
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+.container .home .login .inputs .user .input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #832b7c; }
+
+.container .home .login .inputs .user .input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #832b7c; }
+
+.container .home .login .inputs .user .input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #832b7c; }
+
+.container .home .login .inputs .user .input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #832b7c; }
+
+.margin--top {
+  margin-top: 2px !important; }
+
+header {
+  width: 100%;
+  position: relative; }
+  header .nav-top {
+    width: 100%;
+    background: #fff;
+    border-bottom: solid 10px #d0ad67;
+    padding-bottom: 7px;
+    padding-top: 13px; }
+    header .nav-top .width_logo {
+      width: 300px;
+      height: 70px; }
+      @media (max-width: 1200px) {
+        header .nav-top .width_logo {
+          width: 100%; } }
+      header .nav-top .width_logo .logo {
+        width: 300px;
+        height: 70px; }
+        @media (max-width: 330px) {
+          header .nav-top .width_logo .logo {
+            width: 100%; } }
+      header .nav-top .width_logo .hover_logo {
+        border-top: solid 10px #832b7c;
+        width: 100%;
+        position: relative;
+        display: block;
+        top: 14px; }
+        @media (max-width: 1200px) {
+          header .nav-top .width_logo .hover_logo {
+            width: 300px; } }
+        @media (max-width: 330px) {
+          header .nav-top .width_logo .hover_logo {
+            width: 100%; } }
+    header .nav-top ul {
+      width: 100%;
+      padding-top: 23px;
+      cursor: default; }
+      @media (max-width: 1200px) {
+        header .nav-top ul {
+          margin-right: 0px;
+          margin-top: 15px;
+          padding-top: 30px; } }
+      @media (max-width: 860px) {
+        header .nav-top ul {
+          margin-bottom: 16px; } }
+      @media (max-width: 430px) {
+        header .nav-top ul {
+          text-align: center; } }
+      header .nav-top ul li {
+        display: inline-block;
+        margin-left: 18px;
+        transition: all 100ms ease; }
+        @media (max-width: 430px) {
+          header .nav-top ul li {
+            background: #ddd;
+            width: 100%;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px; } }
+        header .nav-top ul li .border-bottom {
+          border-top: solid 9px #d0ad67;
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          top: 26px;
+          transition: all 100ms ease; }
+          @media (max-width: 860px) {
+            header .nav-top ul li .border-bottom {
+              display: none; } }
+        header .nav-top ul li:hover a {
+          color: #b656ae;
+          transition: all 100ms ease; }
+        header .nav-top ul li:hover .border-bottom {
+          border-color: #832b7c;
+          transition: all 100ms ease; }
+        header .nav-top ul li:last-of-type {
+          margin-left: 0px; }
+        header .nav-top ul li a {
+          font: 16px "IRANSansWeb_Bold";
+          color: #6b6b6b;
+          transition: all 100ms ease; }
+          @media (max-width: 430px) {
+            header .nav-top ul li a {
+              width: 100%;
+              display: block; }
+              header .nav-top ul li a:last-of-type {
+                margin-bottom: 0px; } }
+  header .Slider {
+    width: 100%; }
+    header .Slider .user_img {
+      width: 100%;
+      height: 522px; }
+      @media (max-width: 860px) {
+        header .Slider .user_img {
+          height: auto; } }
+    header .Slider .carousel-cell {
+      width: 100%;
+      height: 522px; }
+      @media (max-width: 860px) {
+        header .Slider .carousel-cell {
+          height: auto; } }
+      header .Slider .carousel-cell .overlay {
+        width: 100%;
+        position: absolute;
+        height: 89px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.25);
+        right: 0px;
+        padding-top: 24px; }
+      header .Slider .carousel-cell .title {
+        font: 26px "IRANSansWeb_Bold";
+        color: #fff;
+        margin-right: 65px; }
+        @media (max-width: 430px) {
+          header .Slider .carousel-cell .title {
+            margin-right: 50px;
+            font-size: 23px; } }
+    header .Slider .flickity-prev-next-button {
+      background: none;
+      width: 70px;
+      height: 70px; }
+      @media (max-width: 430px) {
+        header .Slider .flickity-prev-next-button {
+          width: 50px;
+          height: 50px; } }
+      header .Slider .flickity-prev-next-button .arrow {
+        opacity: .5;
+        fill: #fff; }
+
+.newletter {
+  width: 100%;
+  background: #b64eae;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 705px) {
+    .newletter {
+      padding-top: 20px;
+      padding-bottom: 40px; } }
+  @media (max-width: 330px) {
+    .newletter {
+      padding-top: 10px;
+      padding-bottom: 20px; } }
+  .newletter .news {
+    margin-top: 16px; }
+    @media (max-width: 1200px) {
+      .newletter .news {
+        width: 100%;
+        margin-bottom: 5px; } }
+    .newletter .news .black-envelope-email-symbol {
+      width: 42px;
+      height: 42px; }
+      @media screen and (max-width: 705px) {
+        .newletter .news .black-envelope-email-symbol {
+          display: none; } }
+    .newletter .news .title {
+      font: 20px "IRANSansWeb_Bold";
+      color: #fff;
+      margin-right: 20px;
+      margin-top: 4px; }
+      @media (max-width: 1200px) {
+        .newletter .news .title {
+          width: 90%; } }
+      @media (max-width: 330px) {
+        .newletter .news .title {
+          font-size: 18px; } }
+      @media screen and (max-width: 705px) {
+        .newletter .news .title {
+          width: 100%;
+          margin-right: 0px;
+          margin-bottom: 10px; } }
+  .newletter .Number {
+    width: 467px;
+    position: relative; }
+    @media screen and (max-width: 705px) {
+      .newletter .Number {
+        width: 100%; } }
+    .newletter .Number .input_Number {
+      width: 100%;
+      font: 17px "IRANSansWeb_Bold";
+      color: #2e2e2e;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      padding-right: 20px;
+      padding-left: 20px;
+      border: none; }
+      @media (max-width: 430px) {
+        .newletter .Number .input_Number {
+          font-size: 15px;
+          padding-top: 22px;
+          padding-bottom: 25px;
+          font-size: 13px; } }
+    .newletter .Number .submit {
+      font: 14px "IRANSansWeb_Bold";
+      color: #fff;
+      text-align: center;
+      background: #d0ad67;
+      position: absolute;
+      top: 3.5px;
+      left: 5px;
+      border: none;
+      height: 63px;
+      padding-left: 30px;
+      padding-right: 30px; }
+      @media (max-width: 430px) {
+        .newletter .Number .submit {
+          font-size: 13px; } }
+
+.Links {
+  width: 100%;
+  height: 409px;
+  background-image: url("../img/pattern.png"); }
+  @media (max-width: 860px) {
+    .Links {
+      height: auto; } }
+  @media (max-width: 330px) {
+    .Links {
+      background: none; } }
+  .Links .Link {
+    width: 270px;
+    padding-top: 50px;
+    cursor: default; }
+    @media (max-width: 860px) {
+      .Links .Link {
+        padding-top: 40px; } }
+    @media (max-width: 600px) {
+      .Links .Link {
+        width: 100%; } }
+    .Links .Link .title {
+      font: 20px "IRANSansWeb_Bold";
+      color: #832b7c; }
+    .Links .Link .link_symbool {
+      width: 23px;
+      height: 23px;
+      margin-left: 4px; }
+    .Links .Link ul {
+      width: 100%;
+      padding-top: 8px; }
+      .Links .Link ul li {
+        width: 100%;
+        display: block;
+        margin-bottom: 13px;
+        transition: all 110ms ease; }
+      .Links .Link ul a {
+        width: 100%;
+        font: 16px "IRANSansWeb_Bold";
+        color: #6b6b6b;
+        transition: all 110ms ease; }
+        .Links .Link ul a:hover {
+          color: #b64eae;
+          transition: all 110ms ease;
+          margin-right: 10px; }
+    .Links .Link .icon_profile {
+      width: 23px;
+      height: 23px;
+      margin-top: 5px;
+      margin-left: 0px; }
+    .Links .Link .map {
+      width: 24px;
+      height: 24px;
+      margin-left: 4px; }
+  .Links .social-network {
+    padding-top: 55px;
+    cursor: default; }
+    @media (max-width: 1200px) {
+      .Links .social-network {
+        margin-bottom: 3px;
+        padding-top: 30px; } }
+    .Links .social-network .title {
+      font: 20px "IRANSansWeb_Bold";
+      color: #832b7c;
+      margin-top: -5px;
+      margin-right: 6px; }
+    .Links .social-network .shape {
+      width: 23px;
+      height: 23px; }
+    .Links .social-network .socials {
+      width: 100%;
+      margin-top: 20px; }
+      .Links .social-network .socials .bg {
+        width: 28px;
+        height: 24px;
+        background: #999898;
+        display: block;
+        text-align: center;
+        margin-left: 8px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: all 120ms ease-in; }
+        .Links .social-network .socials .bg:hover {
+          background: #59a7ff;
+          transition: all 120ms ease-in; }
+        .Links .social-network .socials .bg a {
+          display: block; }
+        .Links .social-network .socials .bg .linkdin {
+          width: 15px;
+          height: 15px;
+          margin-left: 1px; }
+        .Links .social-network .socials .bg .icon {
+          width: 15px;
+          height: 15px;
+          margin-left: 0px;
+          margin-top: 2px; }
+      .Links .social-network .socials .bg-instagram {
+        width: 25px;
+        height: 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px; }
+        .Links .social-network .socials .bg-instagram .instagram {
+          width: 21px;
+          height: 21px;
+          margin-left: 0px;
+          margin-top: 2px; }
+
+footer .footer {
+  width: 100%;
+  background: #832b7c;
+  padding-top: 10px;
+  padding-bottom: 8px; }
+  @media screen and (max-width: 350px) {
+    footer .footer {
+      margin-top: 8px; } }
+  footer .footer .title {
+    font: 18px "IRANSansWeb";
+    color: #fff;
+    margin-top: 10px;
+    cursor: default; }
+
+.forum-Class-- {
+  width: 100%;
+  border-top: solid 9px #d0ad67;
+  margin-top: 30px;
+  position: relative;
+  padding-top: 23px;
+  background: #f3f3f3;
+  height: 600px; }
+  @media (max-width: 1200px) {
+    .forum-Class-- {
+      height: auto; } }
+  .forum-Class-- .text {
+    font: 23px "IRANSansWeb_Bold";
+    color: #832b7c;
+    margin-right: 14px;
+    margin-bottom: 43px; }
+    @media (max-width: 600px) {
+      .forum-Class-- .text {
+        margin-bottom: 60px;
+        margin-right: 0px; } }
+  .forum-Class-- .border-top {
+    border-top: solid 9px #832b7c;
+    width: 272px;
+    position: absolute;
+    top: -9px;
+    right: 86px; }
+  .forum-Class-- .Right_Width {
+    width: 587px;
+    border-left: solid 1px #dbdbdb; }
+    @media (max-width: 1200px) {
+      .forum-Class-- .Right_Width {
+        width: 100%;
+        border: none;
+        margin-bottom: 15px; } }
+    .forum-Class-- .Right_Width:last-of-type {
+      width: 575px;
+      border: none;
+      padding-right: 17px; }
+      @media (max-width: 1200px) {
+        .forum-Class-- .Right_Width:last-of-type {
+          width: 100%;
+          border: none;
+          margin-top: 25px; } }
+      @media (max-width: 600px) {
+        .forum-Class-- .Right_Width:last-of-type {
+          padding-right: 0px; } }
+    .forum-Class-- .Right_Width .main-carousel_right {
+      width: 100%; }
+      .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor {
+        background: #fff;
+        width: 507px;
+        margin-right: 32px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-radius: 1px;
+        position: relative; }
+        @media (max-width: 1200px) {
+          .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor {
+            width: 100%; } }
+        @media (max-width: 860px) {
+          .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor {
+            margin-right: 0px; } }
+        .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .description {
+          font: 18px "IRANSansWeb";
+          color: #686868;
+          margin-top: 8px;
+          margin-bottom: 1px;
+          width: 421px;
+          display: block;
+          margin-right: 60px; }
+          @media (max-width: 1200px) {
+            .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .description {
+              width: 88%; } }
+          @media (max-width: 860px) {
+            .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .description {
+              margin-right: 0px;
+              padding-right: 20px;
+              padding-left: 20px;
+              width: 100%; } }
+        .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .quotation {
+          width: 46px;
+          height: 46px;
+          position: absolute;
+          top: 14px;
+          right: 10px; }
+          @media (max-width: 860px) {
+            .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .quotation {
+              display: none; } }
+        .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .arrow {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          right: 120px;
+          bottom: -23px; }
+          @media (max-width: 430px) {
+            .forum-Class-- .Right_Width .main-carousel_right .last-post-Advisor .arrow {
+              display: none; } }
+      .forum-Class-- .Right_Width .main-carousel_right .user {
+        margin-right: 65px;
+        margin-top: 27px; }
+        @media (max-width: 430px) {
+          .forum-Class-- .Right_Width .main-carousel_right .user {
+            margin-right: 0px; } }
+        .forum-Class-- .Right_Width .main-carousel_right .user .avatar {
+          width: 94px;
+          height: 94px;
+          background: #fff;
+          border-radius: 50px;
+          border: solid 1px #cacaca;
+          position: relative; }
+          .forum-Class-- .Right_Width .main-carousel_right .user .avatar .avatar_user {
+            width: 74px;
+            height: 74px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+            border-radius: 30px; }
+        .forum-Class-- .Right_Width .main-carousel_right .user .title {
+          font: 16px "IRANSansWeb_Bold";
+          color: #676767;
+          margin-top: 12px;
+          display: block;
+          margin-right: -15px; }
+          @media (max-width: 430px) {
+            .forum-Class-- .Right_Width .main-carousel_right .user .title {
+              width: 200px;
+              margin-right: 0px; } }
+      .forum-Class-- .Right_Width .main-carousel_right .carousel-cell {
+        width: 100%; }
+      .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button.next {
+        top: -60px;
+        right: auto;
+        left: 75px;
+        background: none;
+        width: 38px;
+        height: 38px;
+        transition: all 110ms ease-in-out; }
+        .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button.next:hover {
+          opacity: .5;
+          transition: all 110ms ease-in-out; }
+        @media (max-width: 600px) {
+          .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button.next {
+            top: -35px;
+            left: 45px; } }
+        .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button.next .arrow {
+          fill: #c1c1c1; }
+      .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button {
+        top: -60px;
+        right: auto;
+        left: 40px;
+        background: none;
+        width: 38px;
+        height: 38px;
+        transition: all 110ms ease-in-out; }
+        .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button:hover {
+          opacity: .5;
+          transition: all 110ms ease-in-out; }
+        @media (max-width: 600px) {
+          .forum-Class-- .Right_Width .main-carousel_right .flickity-prev-next-button {
+            top: -35px;
+            left: 0px; } }
+
+#forum {
+  width: 100%; }
+  #forum .forum-Class-- {
+    height: 300px; }
+    @media (max-width: 1200px) {
+      #forum .forum-Class-- {
+        height: auto; } }
+    @media (max-width: 430px) {
+      #forum .forum-Class-- {
+        padding-top: 10px !important; } }
+    #forum .forum-Class-- .Right_Width {
+      width: 100%; }
+      #forum .forum-Class-- .Right_Width .user {
+        margin-right: 35px;
+        margin-top: 0px; }
+        @media (max-width: 1200px) {
+          #forum .forum-Class-- .Right_Width .user {
+            margin-bottom: 10px; } }
+      #forum .forum-Class-- .Right_Width .text {
+        font-size: 19px; }
+        @media (max-width: 600px) {
+          #forum .forum-Class-- .Right_Width .text {
+            margin-bottom: 50px; } }
+    #forum .forum-Class-- .main-carousel_right .last-post-Advisor {
+      width: 980px;
+      margin-right: 0px; }
+      @media (max-width: 1200px) {
+        #forum .forum-Class-- .main-carousel_right .last-post-Advisor {
+          width: 100%;
+          margin-bottom: 10px;
+          padding-left: 10px; } }
+      @media (max-width: 860px) {
+        #forum .forum-Class-- .main-carousel_right .last-post-Advisor {
+          padding-left: 0px; } }
+      @media (max-width: 1200px) {
+        #forum .forum-Class-- .main-carousel_right .last-post-Advisor .description {
+          width: 91%;
+          padding-right: 40px;
+          padding-left: 0px; } }
+      @media (max-width: 430px) {
+        #forum .forum-Class-- .main-carousel_right .last-post-Advisor .description {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          font-size: 15px; } }
+      #forum .forum-Class-- .main-carousel_right .last-post-Advisor .arrow {
+        display: none; }
+      #forum .forum-Class-- .main-carousel_right .last-post-Advisor .flickity-prev-next-button svg:hover {
+        opacity: 1; }
+    #forum .forum-Class-- .arrow {
+      fill: #333; }
+    #forum .forum-Class-- .title {
+      width: 150px; }
+    #forum .forum-Class-- .description {
+      width: 100%;
+      margin-right: 0px;
+      padding-left: 46px;
+      padding-right: 66px; }
+
+.Login {
+  margin-top: 1px; }
+  .Login .nav-top {
+    width: 100%;
+    background: #832b7c; }
+    @media (max-width: 600px) {
+      .Login .nav-top {
+        text-align: center; } }
+    .Login .nav-top .bg {
+      width: 299px; }
+      @media (max-width: 1200px) {
+        .Login .nav-top .bg {
+          width: 100%;
+          padding-top: 15px; } }
+      .Login .nav-top .bg .club {
+        width: 299px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 27px;
+        background: #d0ad67; }
+        @media (max-width: 600px) {
+          .Login .nav-top .bg .club {
+            width: 90%; } }
+        @media (max-width: 430px) {
+          .Login .nav-top .bg .club {
+            width: 100%; } }
+        .Login .nav-top .bg .club .title {
+          font: 20px "IRANSansWeb_Bold";
+          color: #fff;
+          margin-right: 20px;
+          cursor: default;
+          margin-top: 7px; }
+        .Login .nav-top .bg .club .shape {
+          width: 41px;
+          height: 41px; }
+    .Login .nav-top .menu {
+      padding-right: 26px;
+      cursor: default;
+      position: relative; }
+      @media (max-width: 1200px) {
+        .Login .nav-top .menu {
+          padding-right: 0px; } }
+      @media (max-width: 600px) {
+        .Login .nav-top .menu {
+          margin-top: 10px;
+          width: 90%; } }
+      @media (max-width: 430px) {
+        .Login .nav-top .menu {
+          width: 100%; } }
+      .Login .nav-top .menu ul li {
+        margin-left: 35px;
+        display: inline-block;
+        padding-right: 7px;
+        padding-left: 7px;
+        text-align: center;
+        transition: all 110ms ease-in-out;
+        position: relative; }
+        .Login .nav-top .menu ul li:hover {
+          background: #b64eae;
+          transition: all 110ms ease-in-out; }
+          @media (max-width: 600px) {
+            .Login .nav-top .menu ul li:hover {
+              width: 100%; } }
+        @media (max-width: 600px) {
+          .Login .nav-top .menu ul li {
+            width: 100%; } }
+        .Login .nav-top .menu ul li .message {
+          width: 21px;
+          height: 21px;
+          background: #fff59b;
+          text-align: center;
+          font: 14px "IRANSansWeb_Bold";
+          color: #832b7c;
+          position: absolute;
+          top: 4px;
+          left: -10px;
+          border-radius: 2px;
+          border-bottom-right-radius: 5px; }
+          @media (max-width: 600px) {
+            .Login .nav-top .menu ul li .message {
+              right: 56%;
+              left: auto; } }
+          @media screen and (max-width: 390px) {
+            .Login .nav-top .menu ul li .message {
+              right: 58%; } }
+        .Login .nav-top .menu ul li:last-child {
+          margin-left: 0px; }
+        @media (max-width: 1200px) {
+          .Login .nav-top .menu ul li {
+            margin-top: 10px;
+            margin-left: 15px; } }
+      .Login .nav-top .menu ul a {
+        font: 18px "IRANSansWeb";
+        color: #fff;
+        display: block;
+        width: 100%;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        transition: all 110ms ease-in-out; }
+        @media (max-width: 600px) {
+          .Login .nav-top .menu ul a {
+            text-align: center;
+            background: #b64eae;
+            padding-top: 11px;
+            padding-bottom: 11px; }
+            .Login .nav-top .menu ul a:hover {
+              color: #000;
+              transition: all 110ms ease-in-out; } }
+    .Login .nav-top .user_avatar {
+      width: 273px;
+      margin-top: 2.5px; }
+      @media (max-width: 600px) {
+        .Login .nav-top .user_avatar {
+          float: none;
+          margin: auto;
+          display: inline-block;
+          margin-top: 10px;
+          margin-bottom: 10px; } }
+      .Login .nav-top .user_avatar .user_admin {
+        font: 18px "IRANSansWeb";
+        color: #fff;
+        margin-top: 21px;
+        cursor: default;
+        width: 200px; }
+        @media (max-width: 1200px) {
+          .Login .nav-top .user_avatar .user_admin {
+            margin-bottom: 15px;
+            margin-top: 30px;
+            float: left; } }
+        @media (max-width: 600px) {
+          .Login .nav-top .user_avatar .user_admin {
+            margin-top: 22px;
+            text-align: right;
+            margin-right: 2px; } }
+      .Login .nav-top .user_avatar .min_avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background: #fff;
+        margin-right: 18px;
+        margin-top: 9px;
+        position: relative;
+        text-align: center; }
+        .Login .nav-top .user_avatar .min_avatar .avatar {
+          width: 100%;
+          height: 100%;
+          border-radius: 25px; }
+
+.notification {
+  width: 100%; }
+  .notification .items {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 0px; }
+    .notification .items .item {
+      width: 100%;
+      padding: 9px 15px 9px 15px;
+      border: solid 1px #f08383;
+      position: relative;
+      cursor: default;
+      margin-bottom: 9px; }
+      .notification .items .item:last-of-type {
+        margin-bottom: 0px; }
+      .notification .items .item .Content {
+        width: 1000px; }
+        @media (max-width: 1200px) {
+          .notification .items .item .Content {
+            width: 90%; } }
+        .notification .items .item .Content .title {
+          font: 14px "IRANSansWeb_Bold";
+          margin-right: 26px;
+          margin-top: 4px;
+          color: #ef7e7e;
+          z-index: 12;
+          width: 100%; }
+          @media (max-width: 1200px) {
+            .notification .items .item .Content .title {
+              margin-right: 0px; } }
+        .notification .items .item .Content .notification-icon {
+          width: 20px;
+          height: 20px;
+          fill: #e06464;
+          position: absolute;
+          right: 13px;
+          top: 14px;
+          z-index: 12; }
+          @media (max-width: 1200px) {
+            .notification .items .item .Content .notification-icon {
+              display: none; } }
+      .notification .items .item .alert-danger {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: url("../img/alert-danger.png");
+        width: 100%;
+        height: 100%;
+        z-index: -11; }
+      .notification .items .item .icon_close_danger {
+        fill: #e06464;
+        width: 21px;
+        height: 21px; }
+      .notification .items .item .link {
+        display: inline-block;
+        margin-top: 6px; }
+        .notification .items .item .link .icno-close {
+          width: 100px;
+          margin-top: 4px; }
+    .notification .items .border-warning {
+      border-color: #eda927 !important; }
+    .notification .items .border-success {
+      border-color: #56c238 !important; }
+    .notification .items .border-danger {
+      border-color: #ef7e7e !important; }
+    .notification .items .border-info {
+      border-color: #39999f !important; }
+    .notification .items .success {
+      color: #56c238 !important;
+      fill: #56c238 !important; }
+    .notification .items .danger {
+      color: #ef7e7e !important;
+      fill: #ef7e7e !important; }
+    .notification .items .warning {
+      fill: #f4d145 !important;
+      color: #eebe2a !important; }
+    .notification .items .info {
+      fill: #39999f !important;
+      color: #39999f !important; }
+
+.index.subjects {
+  width: 100%;
+  padding-top: 15px; }
+  .index.subjects .items {
+    width: 100%;
+    margin-top: 20px; }
+    .index.subjects .items .item {
+      width: 100%;
+      border: solid 2px #eaeaea;
+      margin-bottom: 17px;
+      border-radius: 1px;
+      position: relative;
+      transition: all 110ms ease; }
+      @media (max-width: 430px) {
+        .index.subjects .items .item {
+          box-shadow: 2px 1px 5px #ccc; } }
+      .index.subjects .items .item:last-of-type {
+        margin-bottom: 0px; }
+      .index.subjects .items .item:hover {
+        background: #fbf6ec;
+        transition: all 110ms ease;
+        border-color: #d5b576; }
+        .index.subjects .items .item:hover .col {
+          background: #e5d4b2;
+          transition: all 110ms ease; }
+        .index.subjects .items .item:hover .date-color {
+          background: #e8dcc5;
+          transition: all 110ms ease; }
+        .index.subjects .items .item:hover .group_subject li .line {
+          border-color: #fbf6ec; }
+      .index.subjects .items .item .Subject {
+        width: 830px; }
+        @media (max-width: 1200px) {
+          .index.subjects .items .item .Subject {
+            width: 67%; } }
+        @media (max-width: 860px) {
+          .index.subjects .items .item .Subject {
+            width: 100%; } }
+        .index.subjects .items .item .Subject .title {
+          font: 18px "IRANSansWeb_Bold";
+          color: #832b7c;
+          position: absolute;
+          right: 32px;
+          top: 6px;
+          cursor: default; }
+          @media (max-width: 1200px) {
+            .index.subjects .items .item .Subject .title {
+              position: relative;
+              right: 0px;
+              top: 0px;
+              float: right;
+              padding-right: 15px;
+              width: 100%; } }
+          @media (max-width: 860px) {
+            .index.subjects .items .item .Subject .title {
+              margin-top: 7px; } }
+        .index.subjects .items .item .Subject .box {
+          width: 9px;
+          height: 9px;
+          background: #d0ad67;
+          margin-right: 15px;
+          margin-top: 17px; }
+          @media (max-width: 1200px) {
+            .index.subjects .items .item .Subject .box {
+              display: none; } }
+      .index.subjects .items .item .group_subject {
+        margin-top: 44px;
+        margin-right: -6px; }
+        @media (max-width: 1200px) {
+          .index.subjects .items .item .group_subject {
+            margin-right: 0px;
+            padding-right: 14px;
+            margin-top: 6px;
+            padding-bottom: 10px; } }
+        .index.subjects .items .item .group_subject li {
+          margin-left: 3px;
+          transition: all 110ms ease;
+          display: inline-block;
+          width: 103px; }
+          .index.subjects .items .item .group_subject li::after {
+            content: "";
+            border-left: solid 1px #832b7c;
+            height: 15px;
+            float: left;
+            margin-top: -22px; }
+          .index.subjects .items .item .group_subject li:last-child::after {
+            display: none; }
+          .index.subjects .items .item .group_subject li:hover .line {
+            border-bottom: solid 1px #832b7c;
+            transition: all 110ms ease; }
+          .index.subjects .items .item .group_subject li:hover a {
+            color: #832b7c;
+            transition: all 110ms ease; }
+          .index.subjects .items .item .group_subject li .line {
+            width: 100%;
+            border-bottom: solid 1px #fff;
+            transition: all 110ms ease;
+            display: block; }
+        .index.subjects .items .item .group_subject a {
+          font: 16px "IRANSansWeb";
+          color: #a57619;
+          display: block;
+          transition: all 110ms ease; }
+  .index.subjects .info {
+    width: 321px;
+    height: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    transition: all 110ms ease; }
+    @media (max-width: 1200px) {
+      .index.subjects .info {
+        width: 32%; } }
+    @media (max-width: 860px) {
+      .index.subjects .info {
+        width: 100%; } }
+    @media (max-width: 430px) {
+      .index.subjects .info {
+        padding-right: 5px; } }
+    .index.subjects .info .col {
+      width: 100%;
+      background: #e8e8e8;
+      height: 100%;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 8px;
+      padding-left: 8px;
+      transition: all 110ms ease; }
+      @media (max-width: 860px) {
+        .index.subjects .info .col {
+          padding-right: 13px;
+          padding-left: 13px; } }
+      .index.subjects .info .col .last-post-user {
+        font: 14px "IRANSansWeb";
+        color: #4c4c4c;
+        margin-right: 8px;
+        margin-top: 1px;
+        cursor: default; }
+      .index.subjects .info .col .user_title {
+        font: 14px "IRANSansWeb_Bold";
+        color: #832b7c;
+        margin-right: 6px;
+        margin-top: 1px;
+        cursor: default; }
+      .index.subjects .info .col .file_icon {
+        width: 19px;
+        height: 19px;
+        margin-top: 3.5px; }
+    .index.subjects .info .date-color {
+      background: #ececec;
+      transition: all 110ms ease; }
+
+.subject {
+  width: 100%; }
+  .subject .titles {
+    width: 100%;
+    border: solid 1px #d5d5d5;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: relative; }
+    .subject .titles .border {
+      border-left: solid 8px #832b7c;
+      height: 52px; }
+      @media (max-width: 860px) {
+        .subject .titles .border {
+          display: none; } }
+    .subject .titles .text {
+      font: 20px "IRANSansWeb_Bold";
+      color: #832b7c;
+      margin-right: 28px;
+      margin-top: 10px; }
+      @media (max-width: 860px) {
+        .subject .titles .text {
+          width: 80%;
+          margin-right: 12px; } }
+      @media (max-width: 600px) {
+        .subject .titles .text {
+          width: 65%; } }
+      @media screen and (max-width: 400px) {
+        .subject .titles .text {
+          width: 100%; } }
+  @media (max-width: 860px) {
+    .subject .min-subject {
+      margin-bottom: 5px; } }
+  .subject .min-subject .all_subject {
+    font: 14px "IRANSansWeb_Bold";
+    color: #832b7c;
+    margin-top: 16px; }
+    @media (max-width: 860px) {
+      .subject .min-subject .all_subject {
+        position: absolute;
+        top: 16px;
+        margin-top: 0px;
+        left: 14px; } }
+    @media screen and (max-width: 400px) {
+      .subject .min-subject .all_subject {
+        position: inherit;
+        top: 0px;
+        left: 0px;
+        margin-top: 16px; } }
+    .subject .min-subject .all_subject .number {
+      font: 14px "IRANSansWeb_Bold";
+      color: #ad883d;
+      word-wrap: break-word; }
+
+.Last--subject.last-content {
+  width: 100%;
+  padding-top: 27px; }
+  @media (max-width: 430px) {
+    .Last--subject.last-content .min-subject {
+      float: right;
+      margin-right: 0px;
+      width: 100%; } }
+  .Last--subject.last-content .min-subject .border-left {
+    border-left: solid 1px #832b7c;
+    margin-left: 10px;
+    padding-left: 15px;
+    height: 32px;
+    display: block;
+    position: relative;
+    top: -5px; }
+    @media (max-width: 430px) {
+      .Last--subject.last-content .min-subject .border-left {
+        display: none; } }
+  .Last--subject.last-content .min-subject .all_subject {
+    position: relative;
+    top: 0px;
+    left: 0px; }
+    @media (max-width: 860px) {
+      .Last--subject.last-content .min-subject .all_subject {
+        margin-top: 12px;
+        padding-right: 14px; } }
+    @media (max-width: 430px) {
+      .Last--subject.last-content .min-subject .all_subject {
+        width: 100%; } }
+    .Last--subject.last-content .min-subject .all_subject:last-of-type {
+      margin-right: 7.5px; }
+      @media (max-width: 430px) {
+        .Last--subject.last-content .min-subject .all_subject:last-of-type {
+          margin-right: 0px; } }
+      .Last--subject.last-content .min-subject .all_subject:last-of-type .border-left {
+        display: none; }
+  .Last--subject.last-content .items {
+    width: 100%;
+    padding-top: 27px; }
+    .Last--subject.last-content .items .item {
+      width: 100%;
+      margin-bottom: 22px; }
+      .Last--subject.last-content .items .item:last-of-type {
+        margin-bottom: 0px; }
+      .Last--subject.last-content .items .item .user {
+        width: 94px;
+        border-radius: 25px;
+        margin-right: 15px; }
+        @media (max-width: 1200px) {
+          .Last--subject.last-content .items .item .user {
+            margin-bottom: 8px; } }
+        .Last--subject.last-content .items .item .user .avatar {
+          width: 94px;
+          height: 94px;
+          background: #fff;
+          border-radius: 50px;
+          border: solid 1px #832b7c;
+          position: relative; }
+          .Last--subject.last-content .items .item .user .avatar .avatar_user {
+            width: 74px;
+            height: 74px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+            border-radius: 30px; }
+          .Last--subject.last-content .items .item .user .avatar .user_default {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border-radius: 50px;
+            fill: #832b7c; }
+        .Last--subject.last-content .items .item .user .info {
+          text-align: center; }
+          .Last--subject.last-content .items .item .user .info .title {
+            font: 16px "IRANSansWeb_Bold";
+            color: #832b7c;
+            display: block;
+            margin-top: 6px; }
+          .Last--subject.last-content .items .item .user .info .one {
+            font: 12px "IRANSansWeb_Bold";
+            color: #bc9038;
+            display: block;
+            margin-top: 4px;
+            cursor: default; }
+      .Last--subject.last-content .items .item .post_item {
+        padding-right: 3px;
+        padding-left: 3px;
+        width: 1001px;
+        border: solid 1px #e8e8e8;
+        border-radius: 1px;
+        padding-top: 3px;
+        position: relative; }
+        @media (max-width: 1200px) {
+          .Last--subject.last-content .items .item .post_item {
+            width: 100%; } }
+        @media (max-width: 430px) {
+          .Last--subject.last-content .items .item .post_item {
+            box-shadow: 2px 1px 5px #ccc; } }
+        .Last--subject.last-content .items .item .post_item .post {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          background: #e9e9e9;
+          padding-right: 14px;
+          padding-left: 18px; }
+          .Last--subject.last-content .items .item .post_item .post .nav-top {
+            width: 100%; }
+            .Last--subject.last-content .items .item .post_item .post .nav-top .title {
+              font: 18px "IRANSansWeb_Bold";
+              color: #832b7c;
+              width: 700px;
+              cursor: default; }
+              @media (max-width: 1200px) {
+                .Last--subject.last-content .items .item .post_item .post .nav-top .title {
+                  width: 65%; } }
+              @media screen and (max-width: 700px) {
+                .Last--subject.last-content .items .item .post_item .post .nav-top .title {
+                  width: 100%; } }
+            @media (max-width: 430px) {
+              .Last--subject.last-content .items .item .post_item .post .nav-top .date_time {
+                float: right; } }
+            .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .like {
+              margin-top: 5px;
+              margin-left: 25px; }
+              @media (max-width: 430px) {
+                .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .like {
+                  margin-left: 0px;
+                  width: 100%; } }
+              .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .like .Square {
+                width: 16px;
+                height: 16px;
+                margin-top: 3.5px; }
+              .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .like .Number {
+                color: #832b7c;
+                font: 14px "IRANSansWeb_Medium";
+                margin-right: 6px;
+                cursor: default; }
+            .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .dates {
+              margin-top: 5px; }
+              @media (max-width: 430px) {
+                .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .dates {
+                  float: right; } }
+              .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .dates .icon_calender {
+                width: 15px;
+                height: 15px;
+                margin-top: 3px; }
+              .Last--subject.last-content .items .item .post_item .post .nav-top .date_time .dates .Number {
+                color: #832b7c;
+                font: 14px "IRANSansWeb_Medium";
+                margin-right: 6px;
+                cursor: default; }
+        .Last--subject.last-content .items .item .post_item .descriptions {
+          width: 100%;
+          position: relative;
+          padding-top: 8px;
+          padding-bottom: 8px; }
+          .Last--subject.last-content .items .item .post_item .descriptions .description {
+            width: 943px;
+            margin-right: 46px;
+            font: 18px "IRANSansWeb";
+            color: #4c4c4c;
+            cursor: default; }
+            @media (max-width: 1200px) {
+              .Last--subject.last-content .items .item .post_item .descriptions .description {
+                width: 100%;
+                padding-right: 46px;
+                margin-right: 0px;
+                padding-left: 46px; } }
+            @media (max-width: 600px) {
+              .Last--subject.last-content .items .item .post_item .descriptions .description {
+                padding-right: 25px;
+                padding-left: 25px; } }
+            @media (max-width: 430px) {
+              .Last--subject.last-content .items .item .post_item .descriptions .description {
+                padding-right: 15px;
+                padding-left: 15px;
+                font-size: 16px; } }
+          .Last--subject.last-content .items .item .post_item .descriptions .quotation {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            top: 0px;
+            right: 3px; }
+            @media (max-width: 600px) {
+              .Last--subject.last-content .items .item .post_item .descriptions .quotation {
+                display: none; } }
+    .Last--subject.last-content .items .Adviser--border {
+      border-color: #44832b !important;
+      fill: #44832b !important; }
+    .Last--subject.last-content .items .Adviser--color {
+      color: #44832b !important; }
+    .Last--subject.last-content .items .user--border {
+      border-color: #832b7c !important;
+      fill: #832b7c !important; }
+    .Last--subject.last-content .items .user--color {
+      color: #832b7c !important; }
+    .Last--subject.last-content .items .admin {
+      border-color: #e34756 !important;
+      fill: #e34756 !important; }
+    .Last--subject.last-content .items .admin--color {
+      color: #e34756 !important; }
+    .Last--subject.last-content .items .backlight {
+      position: absolute;
+      top: 49px;
+      right: -34px;
+      width: 35px; }
+      @media (max-width: 1200px) {
+        .Last--subject.last-content .items .backlight {
+          display: none; } }
+
+#profile.profile {
+  width: 100%;
+  margin-top: 13px; }
+  #profile.profile .content {
+    width: 100%; }
+    #profile.profile .content .subject {
+      width: 100%;
+      border: solid 1px #ccc;
+      padding: 2px; }
+      @media (max-width: 600px) {
+        #profile.profile .content .subject .user_prfile {
+          width: 100%; } }
+      #profile.profile .content .subject .user_prfile .line {
+        height: 52px;
+        border-left: solid 8px #832b7c; }
+      #profile.profile .content .subject .user_prfile .text {
+        font: 23px "IRANSansWeb_Bold";
+        color: #832b7c;
+        margin-top: 7px;
+        margin-right: 21px; }
+        @media (max-width: 600px) {
+          #profile.profile .content .subject .user_prfile .text {
+            font-size: 20px; } }
+    @media screen and (max-width: 500px) {
+      #profile.profile .content .buttons {
+        width: 100%; } }
+    #profile.profile .content .buttons .button {
+      width: 154px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: #d0ad67;
+      text-align: center;
+      font: 18px "IRANSansWeb_Bold";
+      color: #fff;
+      border: none;
+      margin-left: 5px;
+      transition: all 110ms ease-in-out; }
+      @media (max-width: 600px) {
+        #profile.profile .content .buttons .button {
+          font-size: 16px; } }
+      @media screen and (max-width: 500px) {
+        #profile.profile .content .buttons .button {
+          width: 40%;
+          float: left;
+          margin-right: 2%; } }
+      #profile.profile .content .buttons .button:last-of-type {
+        margin-left: 0px; }
+        @media screen and (max-width: 500px) {
+          #profile.profile .content .buttons .button:last-of-type {
+            margin-right: 0%; } }
+      #profile.profile .content .buttons .button:hover {
+        background: #832b7c;
+        transition: all 110ms ease-in-out; }
+    #profile.profile .content .buttons .tusi {
+      background: #969696; }
+
+#profile.profile .form {
+  width: 100%;
+  padding-top: 53px; }
+  #profile.profile .form .conversation {
+    width: 336px;
+    border-radius: 1px; }
+    @media (max-width: 1200px) {
+      #profile.profile .form .conversation {
+        width: 36%; } }
+    @media screen and (max-width: 770px) {
+      #profile.profile .form .conversation {
+        width: 45%; } }
+    @media (max-width: 600px) {
+      #profile.profile .form .conversation {
+        width: 99%; } }
+    #profile.profile .form .conversation .items {
+      width: 100%;
+      border-radius: 1px;
+      border: solid 1px #ccc;
+      padding: 5px;
+      margin-bottom: 30px; }
+      @media (max-width: 860px) {
+        #profile.profile .form .conversation .items {
+          margin-top: 25px; } }
+      #profile.profile .form .conversation .items .item {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 3px;
+        background: #e7e7e7;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 1px;
+        transition: all 110ms ease-in-out; }
+        #profile.profile .form .conversation .items .item:hover {
+          background: #c18f2a;
+          transition: all 110ms ease-in-out; }
+          #profile.profile .form .conversation .items .item:hover .comment_me {
+            color: #2e2e2e;
+            transition: all 110ms ease-in-out; }
+          #profile.profile .form .conversation .items .item:hover .number {
+            color: #2e2e2e;
+            transition: all 110ms ease-in-out; }
+        #profile.profile .form .conversation .items .item .message-icon {
+          width: 25px;
+          height: 25px;
+          fill: #832b7c;
+          margin-top: 3px; }
+        #profile.profile .form .conversation .items .item .comment_me {
+          font: 18px "IRANSansWeb_Bold";
+          color: #832b7c;
+          margin-right: 8px;
+          cursor: default;
+          transition: all 110ms ease-in-out; }
+        #profile.profile .form .conversation .items .item .number {
+          font: 18px "IRANSansWeb_Bold";
+          color: #c18f2a;
+          margin-right: 5px;
+          transition: all 110ms ease-in-out; }
+        #profile.profile .form .conversation .items .item .question {
+          width: 25px;
+          height: 25px;
+          fill: #832b7c;
+          margin-top: 3px;
+          transform: rotate(180deg); }
+        #profile.profile .form .conversation .items .item .private-message {
+          width: 25px;
+          height: 25px;
+          fill: #832b7c;
+          margin-top: 0px; }
+      #profile.profile .form .conversation .items .pic {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 130px;
+        text-align: center; }
+        #profile.profile .form .conversation .items .pic .readius {
+          width: 268px;
+          height: 268px;
+          border-radius: 200px;
+          border: solid 1px #e4e4e4;
+          margin: auto;
+          position: relative; }
+          @media (max-width: 860px) {
+            #profile.profile .form .conversation .items .pic .readius {
+              width: 100%; } }
+          @media (max-width: 600px) {
+            #profile.profile .form .conversation .items .pic .readius {
+              width: 268px; } }
+        #profile.profile .form .conversation .items .pic .text_render {
+          width: 100%;
+          font: 18px "IRANSansWeb_Bold";
+          margin: 110px auto;
+          display: block;
+          color: #acacac;
+          cursor: default; }
+        #profile.profile .form .conversation .items .pic .file_upload {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          z-index: 11; }
+        #profile.profile .form .conversation .items .pic #img_uploaded {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          border-radius: 200px;
+          width: 100%;
+          height: 268px;
+          display: none; }
+#profile.profile .inputs {
+  width: 800px; }
+  @media (max-width: 1200px) {
+    #profile.profile .inputs {
+      width: 61%; } }
+  @media (max-width: 860px) {
+    #profile.profile .inputs {
+      width: 100%; } }
+  #profile.profile .inputs .min_input {
+    width: 365px;
+    margin-left: 40px; }
+    @media (max-width: 1200px) {
+      #profile.profile .inputs .min_input {
+        width: 46%;
+        margin-left: 3%; } }
+    @media (max-width: 860px) {
+      #profile.profile .inputs .min_input {
+        width: 48.20%; } }
+    @media (max-width: 430px) {
+      #profile.profile .inputs .min_input {
+        width: 99.8%; } }
+    #profile.profile .inputs .min_input:nth-child(2n) {
+      margin-left: 0px; }
+    #profile.profile .inputs .min_input .input {
+      width: 100%;
+      font: 18px "IRANSansWeb_Bold";
+      color: #832b7c;
+      padding-right: 9px;
+      padding-left: 9px;
+      margin-bottom: 20px;
+      border: solid 1px #dadada;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      transition: all 90ms ease-in-out;
+      border-radius: 1px; }
+      @media (max-width: 600px) {
+        #profile.profile .inputs .min_input .input {
+          font-size: 16px; } }
+      #profile.profile .inputs .min_input .input:focus {
+        border-color: #d0ad67;
+        transition: all 90ms ease-in-out; }
+      #profile.profile .inputs .min_input .input::-webkit-input-placeholder {
+        color: #acacac; }
+      #profile.profile .inputs .min_input .input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #acacac; }
+      #profile.profile .inputs .min_input .input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #acacac; }
+      #profile.profile .inputs .min_input .input:-ms-input-placeholder {
+        color: #acacac; }
+  #profile.profile .inputs .empty {
+    border-color: red !important;
+    transition: all 90ms ease-in-out; }
+  #profile.profile .inputs .textarea {
+    width: 770px;
+    font: 18px "IRANSansWeb_Bold";
+    color: #832b7c;
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-top: 12px;
+    border: solid 1px #dadada;
+    transition: all 90ms ease-in-out;
+    border-radius: 1px;
+    height: 332px; }
+    @media (max-width: 1200px) {
+      #profile.profile .inputs .textarea {
+        width: 94.90%; } }
+    @media (max-width: 860px) {
+      #profile.profile .inputs .textarea {
+        width: 99%; } }
+    @media (max-width: 600px) {
+      #profile.profile .inputs .textarea {
+        font-size: 16px;
+        margin-bottom: 15px; } }
+    #profile.profile .inputs .textarea:focus {
+      border-color: #d0ad67;
+      transition: all 90ms ease-in-out; }
+    #profile.profile .inputs .textarea::-webkit-input-placeholder {
+      color: #acacac; }
+    #profile.profile .inputs .textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #acacac; }
+    #profile.profile .inputs .textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #acacac; }
+    #profile.profile .inputs .textarea:-ms-input-placeholder {
+      color: #acacac; }
+
+#comment {
+  width: 100%;
+  margin-top: 20px; }
+  #comment .Last--subject.last-content .items {
+    margin-bottom: 13px; }
+    #comment .Last--subject.last-content .items:nth-child(3n) {
+      padding-top: 0px; }
+    #comment .Last--subject.last-content .items .Negative {
+      fill: #4ec300; }
+    @media (max-width: 430px) {
+      #comment .Last--subject.last-content .items .item .post_item {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px !important; } }
+    #comment .Last--subject.last-content .items .item .post_item .items {
+      margin-bottom: 0px; }
+    #comment .Last--subject.last-content .items .item .post_item .post_item {
+      width: 836px;
+      margin-left: 15px;
+      margin-bottom: 14px; }
+      @media (max-width: 1200px) {
+        #comment .Last--subject.last-content .items .item .post_item .post_item {
+          width: 100%;
+          margin-left: 0px; } }
+      #comment .Last--subject.last-content .items .item .post_item .post_item .post {
+        margin-top: 4px;
+        margin-right: 1px;
+        margin-left: 1px; }
+        #comment .Last--subject.last-content .items .item .post_item .post_item .post .like:nth-child(3) {
+          display: none; }
+        #comment .Last--subject.last-content .items .item .post_item .post_item .post .like:nth-child(2) {
+          margin-left: 5px; }
+      #comment .Last--subject.last-content .items .item .post_item .post_item .descriptions .description {
+        width: auto;
+        padding-left: 15px; }
+        @media (max-width: 600px) {
+          #comment .Last--subject.last-content .items .item .post_item .post_item .descriptions .description {
+            padding-right: 20px;
+            width: 100%; } }
+        @media (max-width: 430px) {
+          #comment .Last--subject.last-content .items .item .post_item .post_item .descriptions .description {
+            margin-bottom: 0px; } }
+      #comment .Last--subject.last-content .items .item .post_item .post_item .min_attachment {
+        display: none; }
+    #comment .Last--subject.last-content .items .item .post_item .user {
+      width: 84px; }
+      #comment .Last--subject.last-content .items .item .post_item .user .avatar {
+        width: 84px;
+        height: 84px; }
+      #comment .Last--subject.last-content .items .item .post_item .user .user_default {
+        width: 64px;
+        height: 64px; }
+      #comment .Last--subject.last-content .items .item .post_item .user .title {
+        font-size: 14px; }
+    @media (max-width: 430px) {
+      #comment .Last--subject.last-content .items .item .post_item .dates {
+        width: 100%; } }
+    #comment .Last--subject.last-content .items .post_item {
+      margin-bottom: 40px; }
+      #comment .Last--subject.last-content .items .post_item:nth-child(2n) {
+        padding-top: 0px;
+        margin-bottom: 0px; }
+      #comment .Last--subject.last-content .items .post_item .descriptions .description:nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 15px; }
+      #comment .Last--subject.last-content .items .post_item .like {
+        background: transparent;
+        border: none;
+        margin-left: 10px; }
+        @media (max-width: 430px) {
+          #comment .Last--subject.last-content .items .post_item .like {
+            width: auto; } }
+        #comment .Last--subject.last-content .items .post_item .like:nth-child(2) {
+          margin-top: 4px;
+          cursor: pointer;
+          margin-left: 25px; }
+        #comment .Last--subject.last-content .items .post_item .like:nth-child(1) {
+          margin-top: 4px;
+          margin-left: -5px;
+          cursor: pointer; }
+    #comment .Last--subject.last-content .items .post .title {
+      width: 400px; }
+    #comment .Last--subject.last-content .items .post .Negative {
+      width: 24px;
+      height: 24px; }
+    #comment .Last--subject.last-content .items .post .Number:nth-child(1) {
+      margin-left: 7px;
+      margin-top: 1.5px; }
+    #comment .Last--subject.last-content .items .post .dates {
+      background: transparent;
+      border: none; }
+  #comment .Last--subject.last-content .min_attachment {
+    padding-right: 9px;
+    padding-left: 9px;
+    border-top: solid 4px #f0f0f0;
+    border-bottom: solid 4px #f0f0f0;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 5px; }
+    #comment .Last--subject.last-content .min_attachment .attachment {
+      margin-left: 40px;
+      margin-top: 4px; }
+      #comment .Last--subject.last-content .min_attachment .attachment .link {
+        display: inline-block; }
+        #comment .Last--subject.last-content .min_attachment .attachment .link .icon_attach {
+          width: 28px;
+          height: 28px; }
+        #comment .Last--subject.last-content .min_attachment .attachment .link .title {
+          font: 18px "IRANSansWeb";
+          color: #7d7d7d;
+          margin-right: 5px; }
+  @media (max-width: 430px) {
+    #comment .Last--subject.last-content .min_button {
+      width: 100%; } }
+  #comment .Last--subject.last-content .min_button .answer {
+    width: 84px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    background: #d0ad67;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font: 14px "IRANSansWeb_Medium";
+    transition: all 95ms ease-in-out;
+    margin-bottom: 6px; }
+    @media (max-width: 430px) {
+      #comment .Last--subject.last-content .min_button .answer {
+        width: 30%; } }
+    @media (max-width: 330px) {
+      #comment .Last--subject.last-content .min_button .answer {
+        width: 40%; } }
+    #comment .Last--subject.last-content .min_button .answer:hover {
+      transition: all 95ms ease-in-out;
+      background: #832b7c; }
+  #comment .pagnation {
+    width: 100%;
+    margin-bottom: 12px; }
+    #comment .pagnation .buttns {
+      text-align: center;
+      margin: auto;
+      cursor: default;
+      width: 500px; }
+      @media (max-width: 600px) {
+        #comment .pagnation .buttns {
+          width: 100%; } }
+      #comment .pagnation .buttns .button {
+        padding-right: 15px;
+        padding-left: 15px;
+        font: 14px "IRANSansWeb_Bold";
+        color: #979797;
+        text-align: center;
+        border: solid 1px #d5d5d5;
+        background: transparent;
+        border-radius: 1px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 1px;
+        transition: all 110ms ease;
+        cursor: pointer; }
+        @media (max-width: 430px) {
+          #comment .pagnation .buttns .button {
+            width: 100%;
+            margin-bottom: 5px; } }
+        #comment .pagnation .buttns .button:hover {
+          background: #ffe2fd;
+          transition: all 110ms ease;
+          color: #832b7c; }
+      #comment .pagnation .buttns .number {
+        padding-right: 8px;
+        padding-left: 8px;
+        cursor: pointer; }
+      @media (max-width: 430px) {
+        #comment .pagnation .buttns .Next {
+          float: right; } }
+  #comment .send_subject {
+    height: 400px;
+    display: none; }
+
+#list-post_send.Last--subject .titles {
+  padding-top: 2px;
+  padding-bottom: 4px; }
+#list-post_send.Last--subject .items {
+  display: none; }
+  #list-post_send.Last--subject .items:nth-child(2) {
+    display: block; }
+#list-post_send.Last--subject .list-post_send {
+  padding-right: 8px;
+  padding-left: 8px; }
+  #list-post_send.Last--subject .list-post_send ul li {
+    padding-right: 17px;
+    padding-left: 17px;
+    transition: all 95ms ease-in-out;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: inline-block; }
+    @media (max-width: 600px) {
+      #list-post_send.Last--subject .list-post_send ul li {
+        width: 100%; } }
+  #list-post_send.Last--subject .list-post_send ul a {
+    font: 18px "IRANSansWeb_Bold";
+    color: #adadad;
+    width: 100%;
+    transition: all 13ms ease;
+    padding-top: 11px;
+    padding-bottom: 11px; }
+  #list-post_send.Last--subject .list-post_send ul .selected {
+    background: #832b7c;
+    transition: all 13ms ease; }
+    #list-post_send.Last--subject .list-post_send ul .selected a {
+      color: #fff;
+      transition: all 13ms ease; }
+#list-post_send.Last--subject .item:last-of-type {
+  margin-bottom: 22px; }
+#list-post_send.Last--subject .display_block {
+  display: block !important; }
+#list-post_send.Last--subject .post-create {
+  width: 100%;
+  border: solid 1px #dadada;
+  border-radius: 1px;
+  margin-bottom: 17px;
+  transition: all 85ms ease-in-out;
+  padding: 2px 3px 2px 3px; }
+  #list-post_send.Last--subject .post-create:hover {
+    background: #faf6eb;
+    transition: all 85ms ease-in-out;
+    border-color: #a57619; }
+    #list-post_send.Last--subject .post-create:hover .col {
+      background: #e4d4b2;
+      transition: all 85ms ease-in-out; }
+  #list-post_send.Last--subject .post-create .subject {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 500px; }
+    @media screen and (max-width: 1000px) {
+      #list-post_send.Last--subject .post-create .subject {
+        width: 700px; } }
+    #list-post_send.Last--subject .post-create .subject .Square {
+      width: 9px;
+      height: 9px;
+      background: #d0af68;
+      margin-top: 10px; }
+    #list-post_send.Last--subject .post-create .subject .title {
+      font: 18px "IRANSansWeb_Bold";
+      color: #832b7c;
+      margin-right: 8px; }
+  #list-post_send.Last--subject .post-create .col {
+    background: #e8e8e8;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 8px;
+    padding-left: 8px;
+    transition: all 85ms ease-in-out;
+    width: 320px; }
+    @media screen and (max-width: 1000px) {
+      #list-post_send.Last--subject .post-create .col {
+        float: left; } }
+    @media (max-width: 430px) {
+      #list-post_send.Last--subject .post-create .col {
+        width: 100%; } }
+    #list-post_send.Last--subject .post-create .col .file_icon {
+      width: 19px;
+      height: 19px;
+      margin-top: 3.5px; }
+    #list-post_send.Last--subject .post-create .col .last-post-user {
+      font: 14px "IRANSansWeb";
+      color: #2e2e2e;
+      margin-right: 8px;
+      margin-top: 1px;
+      cursor: default; }
+    #list-post_send.Last--subject .post-create .col .user_title {
+      color: #832b7c;
+      margin-right: 6px;
+      margin-top: 1px;
+      cursor: default;
+      font: 14px "IRANSansWeb_Bold"; }
+
+/*# sourceMappingURL=import.css.map */

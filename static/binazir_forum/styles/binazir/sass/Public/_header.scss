@@ -1,0 +1,151 @@
+header{
+  width: $width;
+  position: relative;
+  @extend .dir;
+  .nav-top{
+    width: $width;
+    background: $white;
+    border-bottom: solid 10px #d0ad67;
+    padding-bottom: 7px;
+    padding-top: 13px;
+    .width_logo{
+      width: 300px;
+      height: 70px;
+      @media#{$tablet}{
+        width: $width;
+      }
+      .logo{
+        width: 300px;
+        height: 70px;
+        @media#{$mobile-min }{
+          width: $width;
+        }
+      }
+      .hover_logo{
+        border-top: solid 10px #832b7c;
+        width: $width;
+        position: relative;
+        display: block;
+        top: 14px;
+        @media#{$tablet}{
+          width: 300px;
+        }
+        @media#{$mobile-min }{
+          width: $width;
+        }
+      }
+    }
+    ul{
+      width: $width;
+      padding-top: 23px;
+      cursor: default;
+      @media#{$tablet}{
+        margin-right: 0px;
+        margin-top: 15px;
+        padding-top: 30px;
+      }
+      @media#{$Medium}{
+        margin-bottom: 16px;
+      }
+      @media#{$mobile}{
+        text-align: center;
+      }
+      li{
+        display: inline-block;
+        margin-left: 18px;
+        transition: all 100ms ease;
+        @media#{$mobile}{
+          background: #ddd;
+          width: $width;
+          margin-bottom: 5px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        .border-bottom{
+          border-top: solid 9px #d0ad67;
+          display: inline-block;
+          width: $width;
+          position: relative;
+          top: 26px;
+          transition: all 100ms ease;
+          @media#{$Medium}{
+            display: none;
+          }
+        }
+        &:hover{
+          a{
+            color: #b656ae;
+            transition: all 100ms ease;
+          }
+          .border-bottom{
+            border-color: #832b7c;
+            transition: all 100ms ease;
+          }
+        }
+        &:last-of-type{
+          margin-left: 0px;
+        }
+        a{
+          @include Bold(16);
+          color: $black;
+          transition: all 100ms ease;
+          @media#{$mobile}{
+            width: $width;
+            display: block;
+            &:last-of-type{
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Slider{
+    width: $width;
+    .user_img{
+      width: $width;
+      height: 522px;
+      @media #{$Medium }{
+        height: auto;
+      }
+    }
+    .carousel-cell{
+      width: $width;
+      height: 522px;
+      @media #{$Medium }{
+        height: auto;
+      }
+      .overlay{
+        width: $width;
+        position: absolute;
+        height: 89px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, .25);
+        right: 0px;
+        padding-top: 24px;
+      }
+      .title{
+        @include Bold(26);
+        color: $white;
+        margin-right: 65px;
+        @media #{$mobile }{
+          margin-right: 50px;
+          font-size: 23px;
+        }
+      }
+    }
+    .flickity-prev-next-button{
+      background: none;
+      width: 70px;
+      height: 70px;
+      @media #{$mobile }{
+        width: 50px;
+        height: 50px;
+      }
+      .arrow{
+        opacity: .5;
+        fill:$white;
+      }
+    }
+  }
+}

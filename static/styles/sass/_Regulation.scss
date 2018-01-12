@@ -1,0 +1,70 @@
+$width   :100%;
+$height  :100%;
+$white   : #fff;
+$black   : #6b6b6b;
+$other   : #832b7c;
+$red     : #d0ad67;
+$yellow  : #a57619;
+$tosi    : #acacac;
+
+
+
+/// General ///
+body{
+  margin: 0px;
+  padding: 0px;
+}
+ul,li, h1,h2,h3,h4,h5,figure{
+  margin: 0px;
+  padding:0px;
+}
+.wrapper{
+  width: 1170px;
+  margin: auto;
+  @media #{$tablet }{
+    width: 90%;
+  }
+}
+.dir{
+  direction: rtl;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.align-center{
+  text-align: center;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    outline: none;
+}
+.clear-fix{
+  clear: both;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  vertical-align: middle;
+}
+.container .home .login .inputs .user .input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #832b7c;
+}
+.container .home .login .inputs .user .input::-moz-placeholder { /* Firefox 19+ */
+  color: #832b7c;
+}
+.container .home .login .inputs .user .input:-ms-input-placeholder { /* IE 10+ */
+  color: #832b7c;
+}
+.container .home .login .inputs .user .input:-moz-placeholder { /* Firefox 18- */
+  color: #832b7c;
+}
+.margin--top{
+  margin-top: 2px !important;
+}
