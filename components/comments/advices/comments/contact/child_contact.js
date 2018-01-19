@@ -25,14 +25,11 @@ class Child_content extends Component {
       const props       = this.props;
       const content     = props.contact;
       const index       = props.index;
-      const Comments    = props.Comments;
 
-      this.like_comment = Comments.map((text,index)=>{
-        if (content.id == text.id) {
+      this.like_comment = [content].map((text,index)=>{
           return(
             <Like key={index} content = {text} index={index}></Like>
           )
-        }
       })
     }
     Fn_unlike(){
@@ -40,14 +37,11 @@ class Child_content extends Component {
       const props       = this.props;
       const content     = props.contact;
       const index       = props.index;
-      const Comments    = props.Comments;
 
-      this.unlike_comment = Comments.map((text,index)=>{
-        if (content.id == text.id) {
+      this.unlike_comment = [content].map((text,index)=>{
           return(
             <UnLike key={index} content = {text} index={index}></UnLike>
           )
-        }
       })
 
     }
@@ -59,28 +53,22 @@ class Child_content extends Component {
       let   Arry      = [];
       const content   = nextProps.contact;
       const index     = nextProps.index;
-      const Comments  = nextProps.Comments;
 
-      this.like_comment = Comments.map((text,index)=>{
-        if (content.id == text.id) {
+      this.like_comment = [content].map((text,index)=>{
           return(
             <Like key={index} content = {text} index={index}></Like>
           )
-        }
       })
     }
     fn_unlike(nextProps){
       let   Arry      = [];
       const content   = nextProps.contact;
       const index     = nextProps.index;
-      const Comments  = nextProps.Comments;
 
-      this.unlike_comment = Comments.map((text,index)=>{
-        if (content.id == text.id) {
+      this.unlike_comment = [content].map((text,index)=>{
           return(
             <UnLike key={index} content = {text} index={index}></UnLike>
           )
-        }
       })
     }
      render() {
@@ -129,12 +117,4 @@ class Child_content extends Component {
 
 
 
-
-  function mapStateToProps(state) {
-    return{
-      Comments: state.Comments
-    }
-  }
-
-
-  export default connect(store_Comments,mapStateToProps)(Child_content)
+  export default (Child_content)

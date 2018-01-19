@@ -12,6 +12,7 @@ function Container(props){
         comments =  { props.comments}
         answer   =  { props.answer }
         count    =  { props.count }
+        data_paganation = {props.count_item}
       >
       </Min_Comments>
     </section>

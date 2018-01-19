@@ -22,7 +22,7 @@ export const dp_answer_comments= (item) => dispatch => {
   })
 }
 
-export const dp_answer_count = (item) => dispatch => {
+export const dp_comments_count = (item) => dispatch => {
   return dispatch({
     type : "LEN--COMMENT",
     len  : item
@@ -55,13 +55,14 @@ export const dp_textarea = (item) => dispatch => {
 }
 
 
-export const dp_adding_comments = (item,val,name,date_time) => dispatch => {
+export const dp_adding_comments = (item,val,name,date_time,counte) => dispatch => {
   return dispatch({
-    type     : "ADDING--COMMENTS",
-    data     : item,
-    id       : val,
-    author   : name,
-    date     : date_time
+    type            : "ADDING--COMMENTS",
+    data            : item,
+    id              : val,
+    author          : name,
+    date            : date_time,
+    last_len_answer : counte
   })
 }
 
@@ -90,7 +91,6 @@ export const dp_like_answer_comment = (item,val) => dispatch => {
     id       : val
   })
 }
-
 
 
 

@@ -15,11 +15,9 @@ import {
      UnLike(){
      const props   = this.props;
      const content = props.content;
-     const index   = props.index;
 
-     this.props.Sb_UnLike_Comment(content.unlike,index,content.id);
+     this.props.Sb_UnLike_Comment(content.unlike,content.id,content.id);
      this.setState({delegate:true});
-     console.log(index);
    }
     render() {
       const props   = this.props;

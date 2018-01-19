@@ -20,7 +20,7 @@ function Min_Comments(props){
                 </Commponents>
               </div>
             </div>
-            <Min_Pagination></Min_Pagination>
+            <Min_Pagination data_paganation={props.data_paganation}></Min_Pagination>
             <div className="send_subject"></div>
           </div>
       );

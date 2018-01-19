@@ -16,9 +16,8 @@ import {
      Like(){
      const props   = this.props;
      const content = props.content;
-     const index   = props.index;
 
-     this.props.Sb_Like_Comment(content.like_comment,index,content.id);
+     this.props.Sb_Like_Comment(content.like_comment,content.id,content.id);
      this.setState({delegate:true});
    }
     render() {

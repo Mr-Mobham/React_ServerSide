@@ -52,3 +52,39 @@
   text-align: center;
   padding-top: 8px;
 }
+.pagination{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.commentBox{
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.pagination li{
+  display: flex;
+  font: 14px "IRANSansWeb_Bold";
+  color: #979797;
+  text-align: center;
+  border: solid 1px #d5d5d5;
+  background: transparent;
+  border-radius: 1px;
+  transition: all 110ms ease;
+  cursor: pointer;
+}
+.pagination li a{
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  transition: all 120ms ease-in;
+}
+.pagination li.active{
+  background: #2e6da4;
+  transition: all 120ms ease-in;
+  border-color: #2e6da4;
+}

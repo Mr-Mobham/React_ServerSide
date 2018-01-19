@@ -31,7 +31,7 @@ function mapDispatchToProps(dispatch) {
     return{
     Len_Comment(sort) {
       dispatch({
-        type: 'INTERNATIONAL_FLIGHTS_ENABLE_SORT',
+        type: 'test',
       });
     }
 

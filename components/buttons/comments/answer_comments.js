@@ -22,16 +22,27 @@ import {
      const date       = jdate.format('DD MMMM YYYY');
      const Answer     = props.Answer;
      const name_user  = comment.author;  // check other time auth //
+     const length     = Answer.length;
+     let last_id_answer = '';
 
      Answer.map((text,index)=>{
        if (comment.id == text.parent_id) {
           counter++;
        }
      });
+
+     if (length == 0) {
+       last_id_answer  = {id : 0};
+     }
+     else {
+       last_id_answer = Answer[length - 1];
+     }
+
      if (content != '') {
-       this.props.Sb_Send_Data(content,comment.id,name_user,date);
+       this.props.Sb_Send_Data(content,comment.id,name_user,date,last_id_answer);
        this.props.Len_Comment(comment,counter);
      }
+
 
    }
 
@@ -54,13 +65,13 @@ function mapStateToProps(state) {
 
 const mapDisPatchToProps = (dispatch,props) =>{
   return{
-    Sb_Send_Data:(data,id,author,date)=>{
-      dispatch((dp_adding_comments(data,id,author,date)));
+    Sb_Send_Data:(data,id,author,date,last_id_answer)=>{
+      dispatch((dp_adding_comments(data,id,author,date,last_id_answer.id)));
         const url     =  `http://localhost:4000/answer_comments`;
-
         axios.post(url,{
           method: 'POST',
           data  : {
+            id            : last_id_answer.id + 1,
             parent_id     : id,
             description   : data,
             like_comment  : 0,

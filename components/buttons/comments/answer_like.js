@@ -40,7 +40,7 @@ import {
 
 function mapStateToProps(state) {
   return{
-    Commets: state.Commets
+    Answer: state.Answer
   }
 }
 
@@ -49,7 +49,6 @@ const mapDisPatchToProps = (dispatch,props) =>{
     Sb_Like_Comment:(like,id)=>{
         dispatch((dp_like_answer_comment(like,id)));
         const url     =  `http://localhost:4000/answer_comments/${id}`;
-        console.log(url);
         axios.put(url,{
           method: 'PUT',
           data  : {

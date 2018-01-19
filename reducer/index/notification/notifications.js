@@ -74,16 +74,18 @@ export const reducer = (state = Global, action) => {
     /// comments //
     case "COMMENTS":{
       const data = action.data;
-      state = {
-          ...state,Comments: data
-        }
+      return{
+        ...state,
+          Comments: data
+      }
         break;
     }
     case "ANSWER":{
       const data = action.data;
-      state = {
-          ...state,Answer: data
-        }
+      return{
+        ...state,Answer: data
+      }
+
         break;
     }
     case "LEN--COMMENT":{
@@ -94,17 +96,22 @@ export const reducer = (state = Global, action) => {
         break;
     }
     case "LIKE--COMMENT":{
-      let plus     = '';
       let like     = action.like;
-      const index  = action.index;
-      let total    = state.Comments[index].like_comment;
+      const id     = action.index;
+      let _index   = '';
+      state.Comments.map((text,index)=>{
+        if (text.id == id) {
+          _index = index;
+        }
+      });
+      let total    = state.Comments[_index].like_comment;
       total+=1;
       return{
         ...state,
           Comments:[
-            ...state.Comments.slice(0,index),
-            {...state.Comments[index],like_comment:total},
-            ...state.Comments.slice(index + 1)
+            ...state.Comments.slice(0,_index),
+            {...state.Comments[_index],like_comment:total},
+            ...state.Comments.slice(_index + 1)
           ]
 
       }
@@ -113,43 +120,48 @@ export const reducer = (state = Global, action) => {
     }
     case "UNLIKE--COMMENT":{
       let unlike   = action.unlike;
-      const index  = action.index;
-      let total    = state.Comments[index].unlike;
+      const id     = action.index;
+      let _index   = '';
+      state.Comments.map((text,index)=>{
+        if (text.id == id) {
+          _index = index;
+        }
+      });
+      let total    = state.Comments[_index].unlike;
       total+=-1;
       return {
         ...state,
         Comments:[
-          ...state.Comments.slice(0,index),
-          {...state.Comments[index],unlike:total},
-          ...state.Comments.slice(index + 1)
+          ...state.Comments.slice(0,_index),
+          {...state.Comments[_index],unlike:total},
+          ...state.Comments.slice(_index + 1)
         ]
       }
         break;
     }
     case "TEXTAREA":{
       const data        = action.data;
-      
+
         state = {
               ...state,Answer_value: data
         }
         break;
     }
     case "ADDING--COMMENTS":{
-      let sum         = 0;
-      const data      = action.data;
-      const author    = action.author;
-      const parent_id = action.id;
-      const date      = action.date;
-
+      let sum                = 0;
+      const data             = action.data;
+      const author           = action.author;
+      const parent_id        = action.id;
+      const date             = action.date;
+      const last_len_answer  = action.last_len_answer;
+      sum                    = last_len_answer;
+      sum++;
 
       if (data != '') {
-          state.Answer.map((text,index)=>{
-            sum++;
-          });
           const obj  = {
             parent_id    : parent_id,
             description  : data,
-            id           : sum + 1,
+            id           : sum,
             like_comment : 0,
             author       : author,
             unlike       : 0,

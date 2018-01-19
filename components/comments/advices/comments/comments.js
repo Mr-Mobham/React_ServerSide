@@ -12,7 +12,7 @@ class Comments extends Component {
     const count   = props.count;
     this.item =  contact.map((text,index)=>{
       return(
-          <Comment_Contact key={index} contact={text} answer={props.answer} count={count} index={index}></Comment_Contact>
+          <Comment_Contact key={text.id} contact={text} answer={props.answer} count={count} index={index}></Comment_Contact>
       )
     })
   }
@@ -22,7 +22,7 @@ class Comments extends Component {
     const count   = props.count;
     this.item =  contact.map((text,index)=>{
       return(
-          <Comment_Contact key={index} contact={text} answer={props.answer} count={count} index={index}></Comment_Contact>
+          <Comment_Contact key={text.id} contact={text} answer={props.answer} count={count} index={index}></Comment_Contact>
       )
     })
   }

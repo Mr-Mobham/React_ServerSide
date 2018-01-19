@@ -18,7 +18,7 @@ class Answer extends Component {
         Arry = [...Arry,text];
         this.answer = Arry.map((contact,index2)=>{
           return(
-            <Child_Answer key={index2} contact={contact} ></Child_Answer>
+            <Child_Answer key={contact.id} contact={contact} ></Child_Answer>
           )
         })
       }
@@ -39,7 +39,7 @@ class Answer extends Component {
         Arry = [...Arry,text];
         this.answer = Arry.map((contact,index2)=>{
           return(
-            <Child_Answer key={index2} contact={contact}  ></Child_Answer>
+            <Child_Answer key={contact.id} contact={contact}  ></Child_Answer>
           )
         })
       }
