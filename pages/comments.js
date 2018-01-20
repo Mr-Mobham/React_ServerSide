@@ -14,7 +14,6 @@ import Container from '../components/comments/container';
 // import Router from 'next/router'
 import  {Router}  from '../config/routes';
 
-let countet = 0;
 
 class Index extends React.Component {
   static async getInitialProps ({ store, isServer , query}) {
@@ -48,7 +47,6 @@ class Index extends React.Component {
     });
     store.dispatch(dp_answer_comments(answer_comments_res.data.item));
 
-    countet++;
     return{isServer,
       data_paganation:{
         count_item  : count_item,

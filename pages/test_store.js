@@ -7,14 +7,6 @@ import Test from '../reducer/comments/test';
 
 /// dispatch ///
 
-export const addCount = (item) => dispatch => {
-  return dispatch({
-    type : "ADD",
-    data : item
-  })
-}
-
-
 const combined = combineReducers({
   Notification,
   Test

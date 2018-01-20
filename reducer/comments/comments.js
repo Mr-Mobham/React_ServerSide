@@ -1,35 +1,21 @@
 const Global = {
-  Comments  : [],
-  Answer    : []
+  DSDASDSAD  : []
 }
 
 
 
 function Notification(state = Global, action) {
   switch (action.type) {
-    case "ADD":{
-      const data = action.data;
-      // state = {
-      //     Comments : [
-      //       ...state.Comments, data
-      //     ]
-      //   }
-        return {
-        ...state,
-        Comments: [
-      ...state.Comments, data
-          ]
-      }
-      console.log("dsadasdasdasdsa");
-        break;
-
-    }
-    case "ANSWER":{
+    case "TTT":{
       const data = action.data;
       state = {
-          ...state,Answer: data
+          DSDASDSAD : [
+            ...state.DSDASDSAD, data
+          ]
         }
+
         break;
+
     }
 
   }

@@ -6,37 +6,32 @@ import { initStore,
 from './test_store';
 import axios from 'axios';
 // import {addCount} from '../action/test';
+import Data from './data';
 
 
 class Test extends React.Component {
     componentWillMount() {
-      this.props.Len_Comment()
+      const props = this.props;
+
+      props.Event(33);
+
     }
+    Like(data){
+
+      this.props.Like("hasan");
+      this.props.deep('MMMMMMMMMMMMMMMMMMM')
+    }
+
     render() {
+        const props = this.props;
+
         return (
             <div className="class-name">
+                <Data Event={this.Like.bind(this)}></Data>
             </div>
         );
     }
 }
-function mapStateToProps(state) {
-  return{
-    Notification  : state.Notification,
-    Test          : state.Test
-  }
-}
 
 
-function mapDispatchToProps(dispatch) {
-    return{
-    Len_Comment(sort) {
-      dispatch({
-        type: 'test',
-      });
-    }
-
-    }
-  }
-
-
-  export default connect(mapStateToProps, mapDispatchToProps)(Test);
+  export default (Test);

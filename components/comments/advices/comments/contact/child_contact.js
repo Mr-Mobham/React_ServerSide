@@ -99,7 +99,7 @@ class Child_content extends Component {
                  <div className="attachment right">
                  </div>
                  <div className="right min_attachment">
-                    <Editor display={true}></Editor>
+                    <Editor display={true} content={content}></Editor>
                     <Attachment></Attachment>
                     <Attachment></Attachment>
                     <Answer_Comment content={content}></Answer_Comment>

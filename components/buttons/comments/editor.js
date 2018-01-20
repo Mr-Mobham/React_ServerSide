@@ -17,13 +17,17 @@ import {
       })
     }
     Text_Editor(event){
-      const props   = this.props;
-      const target  = event.target;
-      const value   = target.value;
+      const props     = this.props;
+      const target    = event.target;
+      const Comments  = props.Comments;
+      const content   = props.content;
+      const value     = target.value;
 
       if (value != '') {
-        this.props.Sb_Answer_Data(value);
+        this.props.Sb_Answer_Data(content.id,value);
       }
+
+
 
     }
     render() {
@@ -33,7 +37,7 @@ import {
           <div>
           {
             display ?
-            <textarea name="" id="" className="editor--textarea" cols="30" rows="10" onKeyUp={this.Text_Editor.bind(this)} placeholder={`پاسخ خود را بنویسید`} />
+            <textarea name="" id=""  className="editor--textarea" cols="30" rows="10" onKeyUp={this.Text_Editor.bind(this)} placeholder={`پاسخ خود را بنویسید`} />
              : null
           }
           </div>
@@ -43,14 +47,14 @@ import {
 
 function mapStateToProps(state) {
   return{
-    Commets: state.Commets
+    Comments: state.Comments
   }
 }
 
 const mapDisPatchToProps = (dispatch,props) =>{
   return{
-    Sb_Answer_Data:(data)=>{
-        dispatch((dp_textarea(data)));
+    Sb_Answer_Data:(id,data)=>{
+        dispatch((dp_textarea(id,data)));
     }
   }
 

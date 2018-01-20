@@ -13,24 +13,20 @@ function Test(state = Global, action) {
       //       ...state.Comments, data
       //     ]
       //   }
-        return {
+      return {
         ...state,
         Comments: [
-      ...state.Comments, data
-    ]
+          ...state.Comments, data
+        ]
       }
-      console.log("Mobham");
-        break;
-
+      break;
     }
     case "ANSWER":{
-      console.log("Mahdi");
-
       const data = action.data;
       state = {
-          ...state,Answer: data
-        }
-        break;
+        ...state,Answer: data
+      }
+      break;
     }
 
   }

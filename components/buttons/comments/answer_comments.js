@@ -15,7 +15,6 @@ import {
    async Answer(){
      let counter      = 0;
      const props      = this.props;
-     const content    = props.Answer_value;
      const comment    = props.content;
      const JDate      = await import ('jalali-date');
      const jdate      = new JDate;
@@ -38,11 +37,10 @@ import {
        last_id_answer = Answer[length - 1];
      }
 
-     if (content != '') {
-       this.props.Sb_Send_Data(content,comment.id,name_user,date,last_id_answer);
+     if (comment.answer != '') {
+       this.props.Sb_Send_Data(comment.answer,comment.id,name_user,date,last_id_answer);
        this.props.Len_Comment(comment,counter);
      }
-
 
    }
 
@@ -58,7 +56,6 @@ import {
 
 function mapStateToProps(state) {
   return{
-    Answer_value: state.Answer_value,
     Answer      : state.Answer,
   }
 }

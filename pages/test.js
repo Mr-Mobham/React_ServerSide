@@ -12,12 +12,30 @@ import Component_ from './Component_';
 class Test extends React.Component {
     componentWillMount() {
       this.props.Len_Comment("Dasds")
-      this.props.Len_Commdsadsaent("DASDASDTEST")
+      this.props.Len_Commdsadsaent("DASDASDTEST");
+      this.setState({
+        delegate  : false
+      })
+    }
+    Add(data){
+      this.setState({
+        delegate  : data
+      });
+      this.props.Len_Comment("Haasn");
+      this.props.Len_Commdsadsaent("M")
+    }
+    Like(data){
+      this.props.Len_Commdsadsaent(data)
+      // this.props.Len_Comment("AAA")
+
+    }
+    Deep(data){
+      this.props.Li(data)
     }
     render() {
         return (
             <div className="class-name">
-                <Component_></Component_>
+                <Component_ name_dispath={`TEST`} data={`5`} Event={this.Add.bind(this)} Like={this.Like.bind(this)} deep={this.Deep.bind(this)}></Component_>
             </div>
         );
     }
@@ -35,7 +53,7 @@ function mapDispatchToProps(dispatch) {
       Len_Comment:(test)=>{
         dispatch({
         type: 'ANSWER',
-        data : "Mahdi"
+        data : test
       });
     },
       Len_Commdsadsaent:(test)=>{
@@ -43,7 +61,14 @@ function mapDispatchToProps(dispatch) {
         type: 'COMMENTS',
         data : test
       });
+    },
+    Li:(test)=>{
+        dispatch({
+        type: 'TTT',
+        data : test
+      });
     }
+
   }
 }
 

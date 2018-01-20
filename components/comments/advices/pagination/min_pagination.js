@@ -39,13 +39,8 @@ import {
       pathname: '/comments',
       query: { id: id }
     });
-
     
    }
-   componentWillReceiveProps(nextProps) {
-     console.log(nextProps);
-   }
-
     render() {
         return (
           <div className="commentBox">

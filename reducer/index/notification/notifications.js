@@ -140,11 +140,23 @@ export const reducer = (state = Global, action) => {
         break;
     }
     case "TEXTAREA":{
-      const data        = action.data;
+      const id      = action.id;
+      const data    = action.value;
 
-        state = {
-              ...state,Answer_value: data
+      var _index   = '';
+      state.Comments.map((text,index)=>{
+        if (text.id == id) {
+          _index = index;
         }
+      });
+      return{
+        ...state,
+          Comments:[
+            ...state.Comments.slice(0,_index),
+            {...state.Comments[_index],answer:data},
+            ...state.Comments.slice(_index + 1)
+          ]
+      }
         break;
     }
     case "ADDING--COMMENTS":{
@@ -167,12 +179,24 @@ export const reducer = (state = Global, action) => {
             unlike       : 0,
             dynamic_date : date
           }
-          state.Answer_value = "";
+          let _index = '';
+          state.Comments.map((text,index)=>{
+            if (text.id == parent_id) {
+              _index = index;
+            }
+          });
+
+
           return{
             ...state,
             Answer:[
               ...state.Answer, obj
-            ]
+            ],
+              Comments:[
+                ...state.Comments.slice(0,_index),
+                {...state.Comments[_index],answer:''},
+                ...state.Comments.slice(_index + 1)
+              ]
           }
       }
         break;

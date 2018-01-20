@@ -47,10 +47,11 @@ export const dp_unlike_comment = (item,val) => dispatch => {
 }
 
 
-export const dp_textarea = (item) => dispatch => {
+export const dp_textarea = (count,data) => dispatch => {
   return dispatch({
     type        : "TEXTAREA",
-    data        : item
+    id          : count,
+    value       : data
   })
 }
 
