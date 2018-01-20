@@ -76,6 +76,7 @@ class Child_content extends Component {
        const content     = props.contact;
        const index       = props.index;
 
+
          return (
            <div>
                <div className="post">
@@ -99,7 +100,7 @@ class Child_content extends Component {
                  <div className="attachment right">
                  </div>
                  <div className="right min_attachment">
-                    <Editor display={true} content={content}></Editor>
+                    <Editor display={true} content={content} clear_value={content.clear_value}></Editor>
                     <Attachment></Attachment>
                     <Attachment></Attachment>
                     <Answer_Comment content={content}></Answer_Comment>

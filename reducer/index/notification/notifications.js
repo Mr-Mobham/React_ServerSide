@@ -153,7 +153,7 @@ export const reducer = (state = Global, action) => {
         ...state,
           Comments:[
             ...state.Comments.slice(0,_index),
-            {...state.Comments[_index],answer:data},
+            {...state.Comments[_index],answer:data,clear_value:false},
             ...state.Comments.slice(_index + 1)
           ]
       }
@@ -194,7 +194,7 @@ export const reducer = (state = Global, action) => {
             ],
               Comments:[
                 ...state.Comments.slice(0,_index),
-                {...state.Comments[_index],answer:''},
+                {...state.Comments[_index],answer:'',clear_value:true},
                 ...state.Comments.slice(_index + 1)
               ]
           }
