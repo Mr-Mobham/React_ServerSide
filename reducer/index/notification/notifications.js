@@ -244,7 +244,6 @@ export const reducer = (state = Global, action) => {
 
         break;
     }
-
     case "ANSWER--LIKE--COMMENT":{
       const id    = action.id;
       var _index   = '';
@@ -264,6 +263,14 @@ export const reducer = (state = Global, action) => {
           ]
       }
 
+        break;
+    }
+    case "TEST":{
+      const id    = action.id;
+
+      return{
+
+      }
         break;
     }
 

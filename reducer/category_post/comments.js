@@ -8,14 +8,13 @@ function Notification(state = Global, action) {
   switch (action.type) {
     case "TTT":{
       const data = action.data;
-      state = {
-          DSDASDSAD : [
-            ...state.DSDASDSAD, data
+        return{
+          ...state,
+            DSDASDSAD : [
+                ...state.DSDASDSAD, data
           ]
         }
-
-        break;
-
+      break;
     }
 
   }
