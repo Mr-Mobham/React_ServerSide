@@ -3,11 +3,13 @@ import React,{Component} from 'react';
  class Link_ extends Component {
 
     render() {
+      const props = this.props;
+      const url   = props.url;
         return (
           <div className="Links">
               <div className="wrapper">
                 <div className="right Link">
-                  <img src="http://localhost:4000/icon/img/link-symbol.svg" className="link_symbool right"  />
+                  <img src={url + `link-symbol.svg`} className="link_symbool right"  />
                   <h3 className="title right">لینک های مفید</h3>
                   <ul className="right">
                     <li>
@@ -31,7 +33,7 @@ import React,{Component} from 'react';
                   </ul>
                 </div>
                 <div className="right Link">
-                  <img src="http://localhost:4000/icon/img/profile.svg" className="icon_profile right"  />
+                  <img src={url + `profile.svg`} className="icon_profile right"  />
                   <h3 className="title right">پروفایل</h3>
                   <ul className="right">
                     <li>
@@ -55,7 +57,7 @@ import React,{Component} from 'react';
                   </ul>
                 </div>
                 <div className="right Link">
-                  <img src="http://localhost:4000/icon/img/map.svg" className="map right"  />
+                  <img src={url + "map.svg"} className="map right"  />
                   <h3 className="title right">تماس با ما</h3>
                   <ul className="right">
                     <li>
@@ -76,43 +78,43 @@ import React,{Component} from 'react';
                   </ul>
                 </div>
                 <div className="right social-network">
-                  <img src="http://localhost:4000/icon/img/share.svg" className="shape right"  />
+                  <img src={url + "share.svg"} className="shape right"  />
                   <h3 className="title right">شبکه های اجتماعی</h3>
                   <div className="clear-fix" />
                   <div className="socials">
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/linkedin-letters.svg" className="linkdin"/>
+                        <img src={url + "linkedin-letters.svg"} className="linkdin"/>
                       </a>
                     </span>
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/facebook-logo.svg" className="icon"  />
+                        <img src={url + "facebook-logo.svg"} className="icon"  />
                       </a>
                     </span>
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/youtube-logo.svg" className="icon" />
+                        <img src={url + "youtube-logo.svg"} className="icon" />
                       </a>
                     </span>
                     <span className="bg right bg-instagram">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/instagram-logo.svg" className="instagram"  />
+                        <img src={url + "instagram-logo.svg"} className="instagram"  />
                       </a>
                     </span>
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/rss-symbol.svg" className="icon"  />
+                        <img src={url + "rss-symbol.svg"} className="icon"  />
                       </a>
                     </span>
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/skype-logo.svg" className="icon"  />
+                        <img src={url + "skype-logo.svg"} className="icon"  />
                       </a>
                     </span>
                     <span className="bg right">
                       <a href="#">
-                        <img src="http://localhost:4000/icon/img/twitter-social-network-logo.svg" className="icon"  />
+                        <img src={url + "twitter-social-network-logo.svg" }className="icon"  />
                       </a>
                     </span>
                   </div>

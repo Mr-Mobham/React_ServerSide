@@ -92,3 +92,12 @@
 #list-post_send.Last--subject .items{
   display: block ;
 }
+.border-warning .notification-icon{
+  fill:#eda927 !important;
+}
+.border-warning .title{
+  color:#eda927 !important;
+}
+.border-warning .icon_close_danger path{
+  fill:#eda927 !important;
+}

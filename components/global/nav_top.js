@@ -2,14 +2,17 @@ import React,{Component} from 'react';
 
  class Nav_Top extends Component {
 
+
     render() {
+      const props = this.props;
+      const url   = props.url;
         return (
           <div className="Login">
               <div className="nav-top">
                 <div className="wrapper">
                   <aside className="bg right">
                     <div className="club">
-                      <img src="http://localhost:4000/icon/img/user-shape.svg" className="shape right"  />
+                      <img src={url + "user-shape.svg"} className="shape right"  />
                       <h3 className="title right">فروم (انجمن)</h3>
                       <div className="clear-fix" />
                     </div>
@@ -37,7 +40,7 @@ import React,{Component} from 'react';
                   <div className="left user_avatar">
                     <h3 className="user_admin right">کاربر ادمین خوش آمدید</h3>
                     <span className="right min_avatar">
-                      <img src="http://localhost:4000/icon/img/user-filled-person-shape.svg" className="avatar"  />
+                      <img src={url + "user-filled-person-shape.svg"} className="avatar"  />
                     </span>
                     <div className="clear-fix" />
                   </div>

@@ -2,41 +2,18 @@ import { createStore, applyMiddleware ,combineReducers} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
 import logger from 'redux-logger'
-import {reducer} from '../reducer/index/notification/notifications';
+// import Notification from '../reducer/comments/comments';
+import Notification from '../reducer/category_post/comments';
 
 /// dispatch ///
 
-export const dp_comments = (item) => dispatch => {
-  return dispatch({
-    type : "COMMENTS",
-    data : item
-  })
-}
+const combined = combineReducers({
+  Notification
+});
 
+const middleware = [
+  logger,
+];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export const store_category_post = (initialState) => {
-  return createStore(
-    reducer,
-     initialState,
-      applyMiddleware(thunkMiddleware,logger))
-}
+export const initStore = initialState =>
+  createStore(combined, initialState,applyMiddleware(...middleware));

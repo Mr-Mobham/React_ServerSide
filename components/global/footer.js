@@ -6,11 +6,13 @@ import Last_News from './last_news';
  class Footer extends Component {
 
     render() {
+      const props = this.props;
+      const url   = props.url;
         return (
           <div>
-            <Last_News></Last_News>
-            <Link_></Link_>
-            
+            <Last_News url={url}></Last_News>
+            <Link_ url={url}></Link_>
+
             <footer>
               <div className="footer">
                 <div className="wrapper">

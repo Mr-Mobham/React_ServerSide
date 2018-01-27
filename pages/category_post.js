@@ -1,7 +1,6 @@
 import React from 'react'
 import connect from 'next-redux-wrapper'
-import { store_category_post,
-  addCount
+import { initStore
 }
 from './store_category_post';
 import axios from 'axios';
@@ -9,56 +8,44 @@ import Head_ from '../components/global/head';
 import Header from '../components/global/header';
 import Footer from '../components/global/footer';
 import Container from '../components/category_post/container';
-// import {addCount} from '../action/test';
 
 
 
 class Category_Post extends React.Component {
-  static async getInitialProps ({ store, isServer , query}) {
-    // const answer_count_url = 'http://localhost:4000/count_comments';
-    // const count_res = await axios({
-    //   method : 'get',
-    //   url    : answer_count_url
-    // });
-    // store.dispatch(dp_comments_count(count_res.data.item));
+  static async getInitialProps ({ isServer , query}) {
+    const url  = 'http://127.0.0.1:8000/';
 
-
-
+    const notification_url = url + 'notification';
+    const notification_res = await axios({
+      method : 'get',
+      url    : notification_url
+    });
+    return{
+      isServer,
+      notification:notification_res.data.data
+    }
   }
-  componentWillMount() {
-
+   componentWillMount() {
   }
-
   render() {
+    const props = this.props;
+    const url   = ``;
     return (
       <div>
-        <Head_></Head_>
-        <Header></Header>
-        <Container
-
+        <Head_ ></Head_>
+        <Header
+          url={url}
          >
-         </Container>
-        <Footer></Footer>
+         </Header>
+         <Container notification={this.props.notification}></Container>
+        <Footer
+          url={url}
+        >
+        </Footer>
       </div>
     );
   }
 }
-function mapStateToProps(state) {
-  return{
-    TEST  : state.TEST
-  }
-}
 
 
-function mapDispatchToProps(dispatch) {
-  return{
-    Len_Comment:(test)=>{
-
-    }
-
-
-  }
-}
-
-
-export default connect(store_category_post,mapStateToProps,mapDispatchToProps)(Category_Post)
+export default connect(initStore)(Category_Post)
